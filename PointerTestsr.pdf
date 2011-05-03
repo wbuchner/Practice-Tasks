@@ -1,0 +1,705 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 5852
+>>
+stream
+0 G
+0 J 0 j 0.1 w 10 M []0 d
+/GS1 gs
+1 i 
+571 421 m
+60 421 l
+S
+0.95 g
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(05/01/11)Tj
+-0.0552 -1.0667 TD
+(17:27:02)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 374.9224 Tm
+0 g
+(PointerTests.pas)Tj
+-4.9009 1.2857 TD
+(Change Calculator - WBuchner 6643140)Tj
+/TT8 1 Tf
+0 7 -7 0 70 46.8 Tm
+(1:)Tj
+/TT10 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+({$mode objfpc})Tj
+/TT8 1 Tf
+0 g
+-1.8 -1.1429 TD
+(2:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( PointerTests;)Tj
+-6 -1.1429 TD
+(3:)Tj
+T*
+(4:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( Main\(\);)Tj
+-7.2 -1.1429 TD
+(5:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-1.8 -1.1429 TD
+[(6:)-599.8(  i: Integer;)]TJ
+T*
+[(7:)-599.8(  ip: ^Integer;)]TJ
+T*
+(8:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-1.8 -1.1429 TD
+[(9:)-599.8(  i := 10;)]TJ
+-0.6 -1.1429 TD
+[(10:)-599.7(  ip := @i;)]TJ
+T*
+[(11:)-599.7(  )]TJ
+T*
+[(12:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(13:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’ Where are the Local Variables? ’)Tj
+/TT8 1 Tf
+0 g
+20.4 0 TD
+(\);)Tj
+-28.8 -1.1429 TD
+[(14:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(15:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The address of i is ’)Tj
+/TT8 1 Tf
+0 g
+13.2 0 TD
+(, HexStr\(Addr\(i\)\)\);)Tj
+-21.6 -1.1429 TD
+[(16:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The address of ip is ’)Tj
+/TT8 1 Tf
+0 g
+13.8 0 TD
+(, HexStr\(Addr\(ip\)\)\);)Tj
+-22.2 -1.1429 TD
+[(17:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(18:)-599.7(  )]TJ
+T*
+[(19:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value of i is ’)Tj
+/TT8 1 Tf
+0 g
+12 0 TD
+(, i\);)Tj
+-20.4 -1.1429 TD
+[(20:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value of ip is ’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, HexStr\(ip\)\);)Tj
+-21 -1.1429 TD
+[(21:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value pointed to by ip is \(ip^\) ’)Tj
+/TT8 1 Tf
+0 g
+22.8 0 TD
+(, ip^\);)Tj
+-31.2 -1.1429 TD
+[(22:)-599.7(  )]TJ
+T*
+[(23:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(24:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’Changing value via ip^’)Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-22.8 -1.1429 TD
+[(25:)-599.7(  ip^ := 20;)]TJ
+T*
+[(26:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value pointes to by ip is now ’)Tj
+/TT8 1 Tf
+0 g
+21.6 0 TD
+(, ip^\);)Tj
+-30 -1.1429 TD
+[(27:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value of i is ’)Tj
+/TT8 1 Tf
+0 g
+12 0 TD
+(, i\);)Tj
+-20.4 -1.1429 TD
+[(28:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(29:)-599.7(  )]TJ
+T*
+[(30:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’Dynamically allocating space for ip’)Tj
+/TT8 1 Tf
+0 g
+22.2 0 TD
+(\);)Tj
+-30.6 -1.1429 TD
+[(31:)-599.7(  New\(ip\);)]TJ
+T*
+[(32:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value of ip is ’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, HexStr\(ip\)\);)Tj
+-21 -1.1429 TD
+[(33:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value pointed to by ip is ’)Tj
+/TT8 1 Tf
+0 g
+19.2 0 TD
+(, ip^\);)Tj
+-27.6 -1.1429 TD
+[(34:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(35:)-599.7(  )]TJ
+T*
+[(36:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’Changing value via ip^’)Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-22.8 -1.1429 TD
+[(37:)-599.7(  ip^ := 30;)]TJ
+T*
+[(38:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value pointed to by ip is now ’)Tj
+/TT8 1 Tf
+0 g
+21.6 0 TD
+(, ip^\);)Tj
+-30 -1.1429 TD
+[(39:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value of i is ’)Tj
+/TT8 1 Tf
+0 g
+12 0 TD
+(, i\);)Tj
+-20.4 -1.1429 TD
+[(40:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’-------------------------------------------’)Tj
+/TT8 1 Tf
+0 g
+27 0 TD
+(\);)Tj
+-35.4 -1.1429 TD
+[(41:)-599.7(  )]TJ
+T*
+[(42:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’Disposing ip and assigning to nil’)Tj
+/TT8 1 Tf
+0 g
+21 0 TD
+(\);)Tj
+-29.4 -1.1429 TD
+[(43:)-599.7(  Dispose\(ip\);)]TJ
+T*
+[(44:)-599.7(  ip := )]TJ
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9 -1.1429 TD
+[(45:)-599.7(  )]TJ
+T*
+[(46:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value in ip is ’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, HexStr\(ip\)\);)Tj
+-21 -1.1429 TD
+[(47:)-599.7(  WriteLn\()]TJ
+/TT12 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’The value ip points to by ip is \(crash!\) ’)Tj
+/TT8 1 Tf
+0 g
+25.8 0 TD
+(, ip^\);)Tj
+-34.2 -1.1429 TD
+(48:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(49:)Tj
+T*
+(50:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(51:)-599.7(  Main\(\);)]TJ
+T*
+(52:)Tj
+/TT12 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+14 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 0 0 500 0 500 0 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 12 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 13 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 117
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 333 250 0 
+500 500 0 500 500 0 500 0 0 0 0 0 0 0 0 0 
+0 0 667 667 0 0 0 0 0 0 0 0 0 0 0 0 
+556 0 0 0 611 0 0 944 0 0 0 0 0 0 0 0 
+0 444 0 444 0 444 0 500 500 278 0 0 278 0 500 500 
+500 0 333 389 278 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 14 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 120
+/Widths [600 0 0 0 0 0 0 0 600 600 0 0 600 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
+600 600 0 0 600 0 0 0 600 600 0 0 600 600 600 0 
+600 0 0 600 600 0 0 600 0 0 0 0 0 0 600 0 
+0 600 0 0 600 600 0 600 0 600 0 0 0 0 600 600 
+600 0 600 600 600 0 0 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 15 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 600 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 600 600 600 600 0 0 0 600 0 0 600 0 600 
+600 0 0 0 0 0 0 0 0 0 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 16 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 600 0 0 0 0 0 0 600 600 0 0 0 600 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600 
+0 0 0 600 600 0 0 0 0 0 0 0 600 0 0 0 
+0 0 0 0 600 0 600 600 0 0 0 0 0 0 600 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 0 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 17 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/S /D
+>>
+endobj
+19 0 obj
+<<
+/Nums [0 18 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/Rotate 90
+/MediaBox [0 0 595 842]
+>>
+endobj
+20 0 obj
+<<
+/CreationDate (D:20110501173027+10'00')
+/ModDate (D:20110501173027+10'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+21 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 19 0 R
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000009468 00000 n 
+0000000016 00000 n 
+0000005920 00000 n 
+0000007413 00000 n 
+0000007613 00000 n 
+0000007783 00000 n 
+0000008178 00000 n 
+0000008609 00000 n 
+0000008996 00000 n 
+0000006073 00000 n 
+0000009617 00000 n 
+0000006214 00000 n 
+0000006416 00000 n 
+0000006622 00000 n 
+0000006819 00000 n 
+0000007010 00000 n 
+0000007211 00000 n 
+0000009549 00000 n 
+0000009577 00000 n 
+0000009710 00000 n 
+0000009833 00000 n 
+trailer
+<<
+/Size 22
+/Root 21 0 R
+/Info 20 0 R
+/ID [<c6c09793ba4a44f24eedd9f5eac9e748><c6c09793ba4a44f24eedd9f5eac9e748>]
+>>
+startxref
+9903
+%%EOF

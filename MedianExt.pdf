@@ -1,0 +1,650 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 4750
+>>
+stream
+0 G
+0 J 0 j 0.1 w 10 M []0 d
+/GS1 gs
+1 i 
+571 421 m
+60 421 l
+S
+0.95 g
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(04/03/11)Tj
+-0.0552 -1.0667 TD
+(19:49:46)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 378.8154 Tm
+0 g
+(MedianExt.pas)Tj
+-1.0964 1.2857 TD
+(Median - WBuchner)Tj
+/TT8 1 Tf
+0 7 -7 0 70 46.8 Tm
+[(1:)-599.8(// Author: Wayne Buchner)]TJ
+0 -1.1429 TD
+[(2:)-599.8(// Student ID: 6643140)]TJ
+T*
+[(3:)-599.8(// Date: 03/04/2011)]TJ
+T*
+[(4:)-599.8(// )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(Program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+(: Median.pas)Tj
+-7.8 -1.1429 TD
+[(5:)-599.8(// Description: Calculate the Median value from an )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+32.4 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+-32.4 -1.1429 TD
+(6:)Tj
+T*
+(7:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( Median;)Tj
+-6 -1.1429 TD
+(8:)Tj
+T*
+(9:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(uses)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( SysUtils, math;)Tj
+-4.8 -1.1429 TD
+(10:)Tj
+T*
+(11:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( Median \()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(  data: )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( Integer\):Double;)Tj
+-25.2 -1.1429 TD
+(12:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(13:)-599.7(    dataLength : Integer;)]TJ
+T*
+(14:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(15:)-599.7(    dataLength := Floor\(Length\(data\)/2\);)]TJ
+T*
+(16:)Tj
+T*
+[(17:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( Length\(data\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(Mod)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( 2 = 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-20.4 -1.1429 TD
+[(18:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1429 TD
+[(19:)-599.7(            result := \(data[dataLength-1] + data[dataLength]\)/2;)]TJ
+T*
+[(20:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1429 TD
+[(21:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1429 TD
+[(22:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1429 TD
+[(23:)-599.7(            result := data[dataLength];)]TJ
+T*
+[(24:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9 -1.1429 TD
+(25:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(26:)Tj
+T*
+(27:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( Main\(\);)Tj
+-7.8 -1.1429 TD
+(28:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(29:)-599.7(    i : Integer;)]TJ
+T*
+[(30:)-599.7(    data: )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( Integer;)Tj
+-13.2 -1.1429 TD
+(31:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(32:)-599.7(    // change length )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( test here.)Tj
+-21.6 -1.1429 TD
+[(33:)-599.7(    SetLength\(data,16\);)]TJ
+T*
+[(34:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i:= 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( Length\(data\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-20.4 -1.1429 TD
+[(35:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.8 -1.1429 TD
+[(36:)-599.7(        data[i] := i+1; )]TJ
+T*
+[(37:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(; )Tj
+-6.6 -1.1429 TD
+[(38:)-599.7(    WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9.6 0 TD
+(íMedian is : í)Tj
+/TT8 1 Tf
+0 g
+8.4 0 TD
+(,Median\(data\):4:2\);)Tj
+-18 -1.1429 TD
+(39:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(40:)Tj
+T*
+(41:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(42:)-599.7(    Main\(\);)]TJ
+T*
+(43:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+9 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+11 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+14 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 0 500 500 0 500 0 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 11 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 12 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 120
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 333 250 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 667 0 0 611 0 0 0 0 0 0 0 889 0 0 
+0 0 0 0 0 0 0 944 0 0 0 0 0 0 0 0 
+0 444 0 444 500 444 0 0 500 278 0 0 0 0 500 0 
+500 0 333 389 278 500 0 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 13 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [600 0 0 0 0 0 0 0 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
+0 600 600 600 600 0 600 0 0 600 0 0 600 600 0 0 
+0 0 0 600 0 600 0 600 0 0 0 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 14 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 600 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 600 0 0 
+600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 0 0 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 15 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+16 0 obj
+<<
+/S /D
+>>
+endobj
+17 0 obj
+<<
+/Nums [0 16 0 R ]
+>>
+endobj
+10 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/Rotate 90
+/MediaBox [0 0 595 842]
+>>
+endobj
+18 0 obj
+<<
+/CreationDate (D:20110406180617+10'00')
+/ModDate (D:20110406180617+10'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+19 0 obj
+<<
+/Type /Catalog
+/Pages 10 0 R
+/PageLabels 17 0 R
+>>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000007760 00000 n 
+0000000016 00000 n 
+0000004818 00000 n 
+0000006096 00000 n 
+0000006298 00000 n 
+0000006468 00000 n 
+0000006855 00000 n 
+0000007308 00000 n 
+0000004958 00000 n 
+0000007909 00000 n 
+0000005098 00000 n 
+0000005300 00000 n 
+0000005506 00000 n 
+0000005703 00000 n 
+0000005894 00000 n 
+0000007841 00000 n 
+0000007869 00000 n 
+0000008002 00000 n 
+0000008125 00000 n 
+trailer
+<<
+/Size 20
+/Root 19 0 R
+/Info 18 0 R
+/ID [<03a7927775948a15b2339737d2f09af5><03a7927775948a15b2339737d2f09af5>]
+>>
+startxref
+8195
+%%EOF

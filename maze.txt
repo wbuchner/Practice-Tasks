@@ -1,0 +1,42 @@
+9
+8
+Maze Entry
+You are at the start of the Maze. This is a large rectangular room with two small doors leading further into the maze.
+Hallway
+This hallway travels east-west. There are three exits a small one to the west, a larger exit to the east and another to the south.
+Small Closet
+Its dark in this closet. There is only one exit back to the west...
+Large Kitchen
+You have entered a large kitchen. It hasn't been cleaned for a while which could account for the odd smell. There are four exits one in each of the four walls.
+Corridor
+This corridor has three exits, a small exit to the north and two exits to the east.
+East-West Corridor
+This corridor leads east-west. 
+Sunlit Corridor
+You can see the sun shining through the exit to the east.
+Outside
+You have made it out of the maze. Well done.
+Long corridor
+This long corridor runs east west with a door in the west and north walls.
+20
+1 2 East
+2 1 West
+1 5 South
+5 1 North
+2 4 South
+4 2 North
+2 3 East
+3 2 West
+5 6 East
+6 5 West
+5 9 East
+9 5 West
+6 4 East
+4 6 West
+4 9 South
+9 4 North
+4 7 East
+7 4 West
+7 8 East
+8 7 West
+

@@ -1,0 +1,2457 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 14034
+>>
+stream
+0 G
+0 J 0 j 0.1 w 10 M []0 d
+/GS1 gs
+1 i 
+571 421 m
+60 421 l
+S
+0.95 g
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(04/23/11)Tj
+-0.0552 -1.0667 TD
+(19:42:13)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 359.3809 Tm
+0 g
+(ChangeCalculator.pas)Tj
+-3.7908 1.2857 TD
+(Change Calculator - WBuchner 6643140)Tj
+/TT8 1 Tf
+0 7 -7 0 70 46.8 Tm
+[(1:)-599.8(//  Author: Wayne Buchner)]TJ
+0 -1.1429 TD
+[(2:)-599.8(//  Student ID: 6643140)]TJ
+T*
+[(3:)-599.8(//  Date: 20 04 2011)]TJ
+T*
+[(4:)-599.8(//  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(Program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+(: Calculate Change Assignment 6 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(Program)Tj
+/TT8 1 Tf
+0 g
+-27.6 -1.1429 TD
+[(5:)-599.8(// Description: This )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( initialises a )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coins, accepts a value )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( a purch)Tj
+-49.9429 -1.1429 TD
+(ase)Tj
+2.5429 -1.1429 TD
+[(6:)-599.8(//                  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( tests whether enough change is present )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+24 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( is able )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( ret)Tj
+-52.3429 -1.1429 TD
+(urn the change given)Tj
+2.5429 -1.1429 TD
+[(7:)-599.8(//              )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the correct demonination.)Tj
+-12.6 -1.1429 TD
+(8:)Tj
+T*
+(9:)Tj
+/TT12 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+({$MODE objfpc})Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+(10:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(program)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+( ChangeCalculator;)Tj
+-6.6 -1.1429 TD
+(11:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(uses)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( SysUtils, math;)Tj
+-4.8 -1.1429 TD
+(12:)Tj
+T*
+[(13:)-599.7(//  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(Type)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( Declarations.)Tj
+-7.2 -1.1429 TD
+(14:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(type)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(15:)-599.7(    CoinData = )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(record)Tj
+/TT8 1 Tf
+0 g
+-11.4 -1.1429 TD
+[(16:)-599.7(        value           :   Integer;)]TJ
+T*
+[(17:)-599.7(        count           :   Integer;)]TJ
+T*
+[(18:)-599.7(        description     :   )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(String)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(;)Tj
+-22.8 -1.1429 TD
+[(19:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6.6 -1.1429 TD
+(20:)Tj
+T*
+[(21:)-599.7(//  Declare the CoinSet )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( here...)Tj
+-19.8 -1.1429 TD
+[(22:)-599.7(CoinSet = )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(array)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( [0..5] )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( CoinData;)Tj
+-17.4 -1.1429 TD
+(23:)Tj
+T*
+[(24:)-599.7(//  Delcare the CombineCoinsOp enumeration here...)]TJ
+T*
+[(25:)-599.7(CombineCoinsOp = \(AddCoins, RemoveCoins\);)]TJ
+T*
+(26:)Tj
+T*
+(27:)Tj
+T*
+[(28:)-599.7(//  Zero all )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the counts )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( a )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coins)Tj
+-25.2 -1.1429 TD
+(29:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( ZeroCounts\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( aSet: CoinSet\);)Tj
+-16.8 -1.1429 TD
+(30:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(31:)-599.7(    i : Integer;)]TJ
+T*
+(32:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(33:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i := Low\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( High\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-23.4 -1.1429 TD
+[(34:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1429 TD
+[(35:)-599.7(            aSet[i].count := 0;)]TJ
+T*
+[(36:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9 -1.1429 TD
+(37:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(38:)Tj
+T*
+[(39:)-599.7(//  Setup the coin data, initialise value, description, )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+36 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( count \()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( 0\))Tj
+-46.2 -1.1429 TD
+(40:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( InitialiseCoins\(out aSet: CoinSet\);)Tj
+-7.8 -1.1429 TD
+(41:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(42:)-599.7(  aSet[0].value := 5;)]TJ
+T*
+[(43:)-599.7(  aSet[0].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í5cí)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-19.8 -1.1429 TD
+[(44:)-599.7(  aSet[1].value := 10;)]TJ
+T*
+[(45:)-599.7(  aSet[1].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í10cí)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-20.4 -1.1429 TD
+[(46:)-599.7(  aSet[2].value := 20;)]TJ
+T*
+[(47:)-599.7(  aSet[2].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í20cí)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-20.4 -1.1429 TD
+[(48:)-599.7(  aSet[3].value := 50;)]TJ
+T*
+[(49:)-599.7(  aSet[3].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í50cí)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-20.4 -1.1429 TD
+[(50:)-599.7(  aSet[4].value := 100;)]TJ
+T*
+[(51:)-599.7(  aSet[4].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í$1í)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-19.8 -1.1429 TD
+[(52:)-599.7(  aSet[5].value := 200;)]TJ
+T*
+[(53:)-599.7(  aSet[5].description := )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(í$2í)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-19.8 -1.1429 TD
+[(54:)-599.7(  )]TJ
+T*
+[(55:)-599.7(  ZeroCounts\(aSet\);)]TJ
+T*
+(56:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(57:)Tj
+T*
+[(58:)-599.7(//  Draws a horizontal line on the Console)]TJ
+T*
+(59:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( DrawLine\(\);)Tj
+-7.8 -1.1429 TD
+(60:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(61:)-599.7(  i: Integer;)]TJ
+56.7143 70.8571 TD
+(62:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(63:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i := 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( 70 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-13.8 -1.1429 TD
+[(64:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3.6 -1.1429 TD
+[(65:)-599.7(    Write\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(í-í)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\);)Tj
+-10.2 -1.1429 TD
+[(66:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-5.4 -1.1429 TD
+[(67:)-599.7(  WriteLn\(\);)]TJ
+T*
+(68:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(69:)Tj
+T*
+[(70:)-599.7(//  Prints a message followed by the coin data from a )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+34.8 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coins.)Tj
+-38.4 -1.1429 TD
+(71:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( PrintCoins\(message: )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(String)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( aSet: CoinSet\);)Tj
+-28.2 -1.1429 TD
+(72:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+-4.2 -1.1429 TD
+[(73:)-599.7(    i : Integer;)]TJ
+T*
+(74:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(75:)-599.7(    Write\(message,)]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+13.2 0 TD
+(í í)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\);)Tj
+-15 -1.1429 TD
+[(76:)-599.7(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i := Low\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( High\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-24.6 -1.1429 TD
+[(77:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.2 -1.1429 TD
+[(78:)-599.7(        Write\(aSet[i].count, )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+19.8 0 TD
+(í x í)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+(, aSet[i].description\);)Tj
+-22.8 -1.1429 TD
+[(79:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( i < High\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-18 -1.1429 TD
+[(80:)-599.7(            )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-9.6 -1.1429 TD
+[(81:)-599.7(                Write\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+15.6 0 TD
+(í, í)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-18 -1.1429 TD
+[(82:)-599.7(            )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-11.4 -1.1429 TD
+[(83:)-599.7(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;    )Tj
+-9 -1.1429 TD
+[(84:)-599.7(        WriteLn\(\);)]TJ
+T*
+(85:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(86:)Tj
+T*
+[(87:)-599.7(//  Displays the coins )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+16.2 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the machine between two horizontal lines.)Tj
+-17.4 -1.1429 TD
+(88:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( PrintMachineStatus\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( machineCoins: CoinSet\);)Tj
+-22.8 -1.1429 TD
+(89:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(90:)-599.7(  DrawLine\(\);)]TJ
+T*
+[(91:)-599.7(  PrintCoins\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+(íIn Machine - í)Tj
+/TT8 1 Tf
+0 g
+9 0 TD
+(, machineCoins\);)Tj
+-19.2 -1.1429 TD
+[(92:)-599.7(  DrawLine\(\);)]TJ
+T*
+[(93:)-599.7(  WriteLn\(\);)]TJ
+T*
+(94:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(95:)Tj
+T*
+[(96:)-599.7(//  Reads )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( an integer, using the message as the prompt )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+27 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( the value)Tj
+-38.4 -1.1429 TD
+(97:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( ReadInteger\(message: )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.2 0 TD
+(String)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(\): Integer;)Tj
+-24 -1.1429 TD
+(98:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(99:)-599.7(  temp: )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(String)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(;)Tj
+-11.4 -1.1429 TD
+(100:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(101:)-599.6(  Write\(message\);)]TJ
+T*
+[(102:)-599.6(  ReadLn\(temp\);)]TJ
+T*
+[(103:)-599.6(  )]TJ
+T*
+[(104:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(not)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( TryStrToInt\(temp, result\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+16.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-25.8 -1.1429 TD
+[(105:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(106:)-599.6(    WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+(íPlease enter a whole number.í)Tj
+/TT8 1 Tf
+0 g
+18 0 TD
+(\);)Tj
+-28.2 -1.1429 TD
+[(107:)-599.6(    )]TJ
+T*
+[(108:)-599.6(    Write\(message\);)]TJ
+T*
+[(109:)-599.6(    ReadLn\(temp\);    )]TJ
+T*
+[(110:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+(111:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(112:)Tj
+T*
+[(113:)-599.6(//  Reads coin data from the user into a )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+27.6 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coins.)Tj
+-31.2 -1.1429 TD
+(114:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( ReadCoinCounts\(message: )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(String)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+(; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( intoSet: CoinSet\);)Tj
+-30 -1.1429 TD
+(115:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(116:)-599.6(  Write\(message, )]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+13.2 0 TD
+(í \(5, 10, 20, 50, 100, 200\): í)Tj
+/TT8 1 Tf
+0 g
+18 0 TD
+(\);)Tj
+-31.2 -1.1429 TD
+[(117:)-599.6(  ReadLn\(intoSet[0].count,)]TJ
+T*
+[(118:)-599.6(    intoSet[1].count,)]TJ
+T*
+[(119:)-599.6(    intoSet[2].count,)]TJ
+T*
+[(120:)-599.6(    intoSet[3].count,)]TJ
+T*
+[(121:)-599.6(    intoSet[4].count,)]TJ
+T*
+[(122:)-599.6(    intoSet[5].count)]TJ
+T*
+[(123:)-599.6(    \);)]TJ
+T*
+[(124:)-599.6(  WriteLn\(\);)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 14431
+>>
+stream
+0 G
+0 J 0 j 0.1 w 10 M []0 d
+/GS1 gs
+1 i 
+571 421 m
+60 421 l
+S
+0.95 g
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(04/23/11)Tj
+-0.0552 -1.0667 TD
+(19:42:13)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 359.3809 Tm
+0 g
+(ChangeCalculator.pas)Tj
+-3.7908 1.2857 TD
+(Change Calculator - WBuchner 6643140)Tj
+/TT8 1 Tf
+0 7 -7 0 70 38.4 Tm
+(125:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(126:)Tj
+T*
+[(127:)-599.6(//  Calculates the total value )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+21.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( a )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(set)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coins.)Tj
+-28.2 -1.1429 TD
+(128:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( TotalValue\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( aSet: CoinSet\): Integer;)Tj
+-18 -1.1429 TD
+(129:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(130:)-599.6(    i : Integer;)]TJ
+T*
+(131:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(132:)-599.6(    result :=0;)]TJ
+T*
+[(133:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i := Low\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( High\(aSet\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-25.2 -1.1429 TD
+[(134:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(135:)-599.6(            result += \(aSet[i].value * aSet[i].count\);)]TJ
+T*
+[(136:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9.6 -1.1429 TD
+(137:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(138:)Tj
+T*
+[(139:)-599.6(// The )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( returns true )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( it was about )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( distribute the correct)Tj
+-31.2 -1.1429 TD
+[(140:)-599.6(// change, otherwise it returns false.)]TJ
+T*
+(141:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( CalculateChange\(amount: Integer; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( machineCoins: CoinSet; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( fromCoi)Tj
+-49.9429 -1.1429 TD
+(ns: CoinSet; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( intoCoins: CoinSet\): Boolean;)Tj
+-8.2571 -1.1429 TD
+(142:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(143:)-599.6(    i, val : Integer; )]TJ
+T*
+(144:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(145:)-599.6(    result := False;)]TJ
+T*
+(146:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i := High\(machineCoins\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(downto)Tj
+/TT8 1 Tf
+0 g
+3.6 0 TD
+( Low\(machineCoins\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-34.8 -1.1429 TD
+[(147:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(148:)-599.6(        )]TJ
+T*
+[(149:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( machineCoins[i].count > 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+16.2 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-22.8 -1.1429 TD
+[(150:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(151:)-599.6(    val := amount )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(DIV)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( machineCoins[i].value;)Tj
+-15.6 -1.1429 TD
+[(152:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( machineCoins[i].count <= val )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+18 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-24.6 -1.1429 TD
+[(153:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(154:)-599.6(        intoCoins[i].count := machineCoins[i].count;)]TJ
+T*
+[(155:)-599.6(        amount := amount - \(machineCoins[i].count * machineCoins[i].value\);)]TJ
+T*
+[(156:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(157:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+-7.8 -1.1429 TD
+[(158:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(159:)-599.6(        intoCoins[i].count := val;)]TJ
+T*
+[(160:)-599.6(        amount := amount - \(val * machineCoins[i].value\);)]TJ
+T*
+[(161:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9.6 -1.1429 TD
+[(162:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-7.2 -1.1429 TD
+(163:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+[(164:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( amount = 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-13.8 -1.1429 TD
+[(165:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(166:)-599.6(        result := True;     )]TJ
+T*
+[(167:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+(168:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(169:)Tj
+T*
+[(170:)-599.6(//  Adds )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(or)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( removes the coins )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( coinsDiff from the fromCoins.)Tj
+-22.2 -1.1429 TD
+(171:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( CombineCoins\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(const)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( coinDiff: CoinSet; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( alterCoins: CoinSet; operation: )Tj
+-34.9429 -1.1429 TD
+(CombineCoinsOp\);)Tj
+1.3429 -1.1429 TD
+(172:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(173:)-599.6(    i : Integer;)]TJ
+T*
+(174:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(175:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i:= low\(coinDiff\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( High\(CoinDiff\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-29.4 -1.1429 TD
+[(176:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( operation = AddCoins )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.2 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-19.8 -1.1429 TD
+[(177:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(178:)-599.6(        alterCoins[i].count := alterCoins[i].count + coinDiff[i].count;)]TJ
+T*
+[(179:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(180:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( operation = RemoveCoins )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-24.6 -1.1429 TD
+[(181:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(182:)-599.6(        alterCoins[i].count := alterCoins[i].count - coinDiff[i].count;)]TJ
+T*
+[(183:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-7.2 -1.1429 TD
+(184:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(185:)Tj
+56.7143 70.8571 TD
+[(186:)-599.6(//  Performs a purchase involving determining cost,)]TJ
+0 -1.1429 TD
+(187:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( PerformPurchase\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( machineCoins: CoinSet; )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( purchaseCoins: CoinSet\);)Tj
+-36.6 -1.1429 TD
+(188:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(189:)-599.6(  cost, diff: Integer;)]TJ
+T*
+[(190:)-599.6(  payment, change: CoinSet;)]TJ
+T*
+(191:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(192:)-599.6(    //  Incoming coins)]TJ
+T*
+[(193:)-599.6(    InitialiseCoins\(payment\);)]TJ
+T*
+[(194:)-599.6(  )]TJ
+T*
+[(195:)-599.6(    InitialiseCoins\(change\);)]TJ
+T*
+[(196:)-599.6(    )]TJ
+T*
+[(197:)-599.6(    cost := ReadInteger\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+17.4 0 TD
+(íPP Cost in cents: í)Tj
+/TT8 1 Tf
+0 g
+12 0 TD
+(\);)Tj
+-29.4 -1.1429 TD
+[(198:)-599.6(    ReadCoinCounts\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+14.4 0 TD
+(íPP Coins usedí)Tj
+/TT8 1 Tf
+0 g
+9 0 TD
+(, payment\);)Tj
+-23.4 -1.1429 TD
+[(199:)-599.6(  )]TJ
+T*
+[(200:)-599.6(    diff := TotalValue\(payment\) - cost;)]TJ
+T*
+[(201:)-599.6(    WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+(íChange Required í)Tj
+/TT8 1 Tf
+0 g
+10.8 0 TD
+(, diff,)Tj
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+4.2 0 TD
+(í centsí)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( \);)Tj
+-30 -1.1429 TD
+[(202:)-599.6(    // put coins paid into machine)]TJ
+T*
+[(203:)-599.6(    CombineCoins\(payment, machineCoins, AddCoins\);)]TJ
+T*
+[(204:)-599.6(  )]TJ
+T*
+[(205:)-599.6(    //  CALLING CALCULATE CHANGE HERE  TRUE )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+29.4 0 TD
+(or)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( FALSE)Tj
+-30.6 -1.1429 TD
+[(206:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( CalculateChange\(diff, machineCoins, purchaseCoins, change\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+36 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-42.6 -1.1429 TD
+[(207:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( )Tj
+-10.8 -1.1429 TD
+[(208:)-599.6(        //  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( calculatechange is true )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( this.....check this )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(with)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( remove c)Tj
+-49.3429 -1.1429 TD
+(oins!)Tj
+1.3429 -1.1429 TD
+[(209:)-599.6(        CombineCoins\(change, machineCoins, RemoveCoins\);)]TJ
+T*
+[(210:)-599.6(        PrintCoins\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+14.4 0 TD
+(íChange required :í)Tj
+/TT8 1 Tf
+0 g
+11.4 0 TD
+(, change\);)Tj
+-25.8 -1.1429 TD
+[(211:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(212:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(213:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-7.8 -1.1429 TD
+[(214:)-599.6(        WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+(íNot Enough Change Sorryí)Tj
+/TT8 1 Tf
+0 g
+15 0 TD
+(\);)Tj
+-27.6 -1.1429 TD
+[(215:)-599.6(        CombineCoins\(payment, machineCoins, RemoveCoins\);)]TJ
+T*
+[(216:)-599.6(        WriteLn\(TotalValue\(payment\),)]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+24.6 0 TD
+(í refundedí)Tj
+/TT8 1 Tf
+0 g
+6.6 0 TD
+(\);)Tj
+-31.2 -1.1429 TD
+[(217:)-599.6(        )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-9.6 -1.1429 TD
+[(218:)-599.6(    WriteLn\(\);)]TJ
+T*
+(219:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(220:)Tj
+T*
+[(221:)-599.6(//  Main)]TJ
+T*
+(222:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( Main\(\);)Tj
+-8.4 -1.1429 TD
+(223:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(224:)-599.6(  machineCoins, customerCoins: CoinSet;)]TJ
+T*
+[(225:)-599.6(  i : Boolean;)]TJ
+T*
+(226:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(227:)-599.6(    i := True;)]TJ
+T*
+[(228:)-599.6(    InitialiseCoins\(machineCoins\);)]TJ
+T*
+(229:)Tj
+T*
+[(230:)-599.6(    InitialiseCoins\(customerCoins\);)]TJ
+T*
+[(231:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( i = True )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+6 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-14.4 -1.1429 TD
+[(232:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(233:)-599.6(        ReadCoinCounts\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+16.8 0 TD
+(íCoins to add to machine: í)Tj
+/TT8 1 Tf
+0 g
+16.2 0 TD
+(,machineCoins\);)Tj
+-33 -1.1429 TD
+[(234:)-599.6(        CombineCoins\(customerCoins, machineCoins, AddCoins\);)]TJ
+T*
+[(235:)-599.6(        PrintMachineStatus\(machineCoins\);)]TJ
+T*
+[(236:)-599.6(        WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+(íTotal value of machine coins is: í)Tj
+/TT8 1 Tf
+0 g
+21 0 TD
+(, TotalValue\(machineCoins\)\);)Tj
+-33.6 -1.1429 TD
+[(237:)-599.6(        PerformPurchase\(machineCoins, customerCoins\);)]TJ
+T*
+[(238:)-599.6(        CombineCoins\(customerCoins, machineCoins, RemoveCoins\);)]TJ
+T*
+[(239:)-599.6(        //  test remove coins)]TJ
+T*
+[(240:)-599.6(        PrintMachineStatus\(machineCoins\);)]TJ
+T*
+[(241:)-599.6(        WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+12.6 0 TD
+(íTotal value of machine coins is: í)Tj
+/TT8 1 Tf
+0 g
+21 0 TD
+(, TotalValue\(machineCoins\)\);)Tj
+-33.6 -1.1429 TD
+[(242:)-599.6(    )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-7.2 -1.1429 TD
+(243:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(244:)Tj
+T*
+(245:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(246:)-599.6(  Main\(\);)]TJ
+T*
+(247:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(.)Tj
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+18 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+19 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+20 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 500 500 500 0 0 0 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 15 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 50
+/Widths [556 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 16 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 117
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 333 250 0 
+500 500 0 500 500 0 500 0 0 0 0 0 0 0 0 0 
+0 0 667 667 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 944 0 0 0 0 0 0 0 0 
+0 444 0 444 0 444 0 500 500 0 0 0 278 0 500 500 
+500 0 333 389 278 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 17 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 122
+/Widths [600 600 0 0 0 0 0 0 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 600 0 0 600 600 0 600 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 0 600 600 600 600 600 600 0 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 18 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 0 0 600 0 0 0 600 600 0 0 600 600 600 0 
+600 600 600 0 0 600 0 0 0 0 600 0 0 0 0 0 
+0 0 0 600 600 600 0 0 0 600 0 0 0 600 600 0 
+600 0 600 600 600 0 600 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 19 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 0 0 0 600 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 600 600 0 0 0 0 0 0 0 600 0 600 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 600 0 0 600 0 0 0 600 0 0 0 0 600 
+600 0 0 0 0 0 0 0 0 0 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 20 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+21 0 obj
+<<
+/S /D
+>>
+endobj
+22 0 obj
+<<
+/Nums [0 21 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 12 0 R]
+/Count 2
+/Rotate 90
+/MediaBox [0 0 595 842]
+>>
+endobj
+23 0 obj
+<<
+/CreationDate (D:20110423200623+10'00')
+/ModDate (D:20110423200623+10'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+24 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 22 0 R
+>>
+endobj
+xref
+0 25
+0000000000 65535 f 
+0000032362 00000 n 
+0000000016 00000 n 
+0000014103 00000 n 
+0000030223 00000 n 
+0000030425 00000 n 
+0000030599 00000 n 
+0000030988 00000 n 
+0000031477 00000 n 
+0000031973 00000 n 
+0000028883 00000 n 
+0000032595 00000 n 
+0000032443 00000 n 
+0000014256 00000 n 
+0000028741 00000 n 
+0000029024 00000 n 
+0000029226 00000 n 
+0000029432 00000 n 
+0000029629 00000 n 
+0000029820 00000 n 
+0000030022 00000 n 
+0000032527 00000 n 
+0000032555 00000 n 
+0000032695 00000 n 
+0000032818 00000 n 
+trailer
+<<
+/Size 25
+/Root 24 0 R
+/Info 23 0 R
+/ID [<bcea5988ad2a94f5ae3063627260740e><bcea5988ad2a94f5ae3063627260740e>]
+>>
+startxref
+32888
+%%EOF
