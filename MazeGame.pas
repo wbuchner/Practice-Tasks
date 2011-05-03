@@ -63,9 +63,9 @@ procedure DisplayRoom(toShow: RoomPtr);
 	    WriteLn(' ', i+ 1,': ', toShow^.doors[i].heading) // this is an enumerated type we need a function to convert it to rting
 end;
 	
-procedure AddDoor(fromRoom: RoomPtr; heading: Direction; toRoom: RoomPtr);
+procedure AddDoor( fromRoom: RoomPtr; heading: Direction; toRoom: RoomPtr);
 begin
-  SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
+  // SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
   fromRoom^.doors[High(fromRoom^.doors)].heading := heading;
   fromRoom^.doors[High(fromRoom^.doors)].destination := toRoom;
 end;
@@ -113,13 +113,16 @@ begin
   ReadLn(input, exitCount);
   WriteLn('There are ', exitCount, ' paths in the maze...');
   
+  // error here!
+  SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
+  
   for i := 0 to exitCount-1 do
   begin
-    ReadLn(input, fromRoom, space, toRoom, space, dir);
+    ReadLn(fromRoom, space, toRoom, space, dir);
     //dir := DirToString(dir);
   
   // last thing to add here.
-   AddDoor(myMaze[fromRoom].doors.heading, dir , myMaze[toRoom].doors.destination);
+   AddDoor(myMaze[fromRoom], dir , myMaze[toRoom]);
     
     //WriteLn('Exit from ', fromRoom, ' to ', toRoom, ' -> ', dir);
   end;
