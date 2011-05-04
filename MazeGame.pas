@@ -63,14 +63,14 @@ procedure DisplayRoom(toShow: RoomPtr);
 	    WriteLn(' ', i+ 1,': ', toShow^.doors[i].heading) // this is an enumerated type we need a function to convert it to rting
 end;
 	
-procedure AddDoor( fromRoom: RoomPtr; heading: Direction; toRoom: RoomPtr);
+procedure AddDoor( var fromRoom: RoomPtr; heading: Direction; toRoom: RoomPtr);
 begin
-  // SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
+  SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
   fromRoom^.doors[High(fromRoom^.doors)].heading := heading;
   fromRoom^.doors[High(fromRoom^.doors)].destination := toRoom;
 end;
 
-procedure LoadMaze(filename: String; var myMaze: maze);
+procedure LoadMaze(filename: String; var myMaze: maze; var player : RoomPtr);
 var
   input: Text;
   space: Char;
@@ -86,86 +86,29 @@ begin
   ReadLn(input, roomCount);
 // set the length of the array myMaze
   SetLength(myMaze,roomCount); 
-  WriteLn('There are ', roomCount, ' rooms in the maze...');
-  WriteLn(Length(myMaze));
-  
   ReadLn(input, goalIdx);
-  WriteLn('The Goal room is room ',goalIdx);
-
-  for i := 0 to roomCount - 1 do
-  begin
-    if (i <> goalIdx) then
-    begin
-      ReadLn(input, title);
-      ReadLn(input, desc);
-      myMaze[i] := CreateRoom(title, desc, false);
-    end
-    else
-    begin
-      ReadLn(input, title);
-      ReadLn(input, desc);
-      myMaze[i] := CreateRoom(title, desc, true);
-    end;
-  end;
-  
-  
-
-  ReadLn(input, exitCount);
-  WriteLn('There are ', exitCount, ' paths in the maze...');
-  
-  // error here!
-  SetLength(fromRoom^.doors, Length(fromRoom^.doors)+1 );
-  
-  for i := 0 to exitCount-1 do
-  begin
-    ReadLn(fromRoom, space, toRoom, space, dir);
-    //dir := DirToString(dir);
-  
-  // last thing to add here.
-   AddDoor(myMaze[fromRoom], dir , myMaze[toRoom]);
-    
-    //WriteLn('Exit from ', fromRoom, ' to ', toRoom, ' -> ', dir);
-  end;
-  
-  Close(input);  
-end;
-
-procedure DemoFileReading(filename: String);
-var
-  input: Text;
-  space, dir: Char;
-  title, desc: String;
-  roomCount, exitCount, goalIdx: Integer;
-  i, fromRoom, toRoom: Integer;
-begin
-  Assign(input, filename);
-  Reset(input);
-  
-  // Read the 
-  ReadLn(input, roomCount);
-  WriteLn('There are ', roomCount, ' rooms in the maze...');
-  
-  ReadLn(input, goalIdx);
-  WriteLn('The ', goalIdx, '''th room in the goal!');
-  
   for i := 0 to roomCount - 1 do
   begin
     ReadLn(input, title);
     ReadLn(input, desc);
-    
-    WriteLn('Room ', i + 1, ' is ', title, ' -> ', desc);
+    if (i <> goalIdx) then
+    begin
+      myMaze[i] := CreateRoom(title, desc, false);
+    end
+    else
+    begin
+     myMaze[i] := CreateRoom(title, desc, true);
+    end;
   end;
-  
+
   ReadLn(input, exitCount);
-  WriteLn('There are ', exitCount, ' paths in the maze...');
+  for i := 0 to 19 do
+    begin
+    ReadLn(input, fromRoom, space, toRoom, space, dir);
+    AddDoor(myMaze[fromRoom-1], dir , myMaze[toRoom-1]);     
+    end;
     
-  for i := 0 to exitCount -1 do
-  begin
-    ReadLn(input, fromRoom, toRoom, space, dir);
-    WriteLn('Exit from ', fromRoom, ' to ', toRoom, ' -> ', dir);
-  end;
-  
-  Close(input);
+  Close(input);  
 end;
 
 procedure Main();
@@ -175,18 +118,8 @@ var
   option : Integer;
 begin
   // Write the Loadmaze procedure
-  LoadMaze('maze.txt', myMaze);
-  
-  
-  // SetLength(myMaze,2);
-  //   myMaze[0] := CreateRoom('Room 1', 'This is room 1...',false);
-  //   myMaze[1] := CreateRoom('Room 2', 'This is room 2...',false);
-  //   myMaze[2] := CreateRoom('Room 3', 'You escaped the Maze',true);
-  //   // 
-  //   AddDoor(myMaze[0], North, myMaze[1]);
-  //   AddDoor(myMaze[0], South, myMaze[0]);
-  //   AddDoor(myMaze[1], South, myMaze[0]);
-  //   AddDoor(myMaze[1], South, myMaze[2]);
+  LoadMaze('maze.txt', myMaze, player);
+
 	WriteLn('------------------------------------------------');
   player := myMaze[0];
  repeat
