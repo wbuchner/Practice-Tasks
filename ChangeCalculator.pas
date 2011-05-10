@@ -189,33 +189,29 @@ var
   cost, diff: Integer;
   payment, change: CoinSet;
 begin
-	//  Incoming coins
-  	InitialiseCoins(payment);
-  
-	InitialiseCoins(change);
-	
-  	cost := ReadInteger('PP Cost in cents: ');
-  	ReadCoinCounts('PP Coins used', payment);
-  
-  	diff := TotalValue(payment) - cost;
-  	WriteLn('Change Required ', diff,' cents' );
-  	// put coins paid into machine
-  	CombineCoins(payment, machineCoins, AddCoins);
-  
-	//  CALLING CALCULATE CHANGE HERE  TRUE or FALSE
-	if CalculateChange(diff, machineCoins, purchaseCoins, change) then
-		begin 
-		//  if calculatechange is true do this.....check this function with remove coins!
-		CombineCoins(change, machineCoins, RemoveCoins);
-		PrintCoins('Change required :', change);
-		end
-	else
-		begin
-		WriteLn('Not Enough Change Sorry');
-		CombineCoins(payment, machineCoins, RemoveCoins);
-		WriteLn(TotalValue(payment),' refunded');
-		end;
-    WriteLn();
+  //  Incoming coins
+  InitialiseCoins(payment);
+  InitialiseCoins(change);
+  cost := ReadInteger('PP Cost in cents: ');
+  ReadCoinCounts('PP Coins used', payment);
+  diff := TotalValue(payment) - cost;
+  WriteLn('Change Required ', diff,' cents' );
+  // put coins paid into machine
+  CombineCoins(payment, machineCoins, AddCoins);
+  //  CALLING CALCULATE CHANGE HERE  TRUE or FALSE
+if CalculateChange(diff, machineCoins, purchaseCoins, change) then
+begin 
+  //  if calculatechange is true do this.....check this function with remove coins!
+  CombineCoins(change, machineCoins, RemoveCoins);
+  PrintCoins('Change required :', change);
+end
+else
+begin
+  WriteLn('Not Enough Change Sorry');
+  CombineCoins(payment, machineCoins, RemoveCoins);
+  WriteLn(TotalValue(payment),' refunded');
+ end;
+  WriteLn();
 end;
 
 //  Main
