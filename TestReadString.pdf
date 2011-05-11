@@ -2,7 +2,7 @@
 %âãÏÓ
 2 0 obj
 <<
-/Length 7514
+/Length 2431
 >>
 stream
 0 G
@@ -24,9 +24,9 @@ BT
 0 g
 0 Tc
 0 Tw
-(03/28/11)Tj
+(05/11/11)Tj
 -0.0552 -1.0667 TD
-(20:55:56)Tj
+(22:42:08)Tj
 ET
 0.7 g
 24 818 36 -72 re
@@ -40,8 +40,8 @@ BT
 0 14 -14 0 55.5 366.3706 Tm
 0 g
 (TestReadString.pas)Tj
-0.7502 1.2857 TD
-(Waynes’s Code)Tj
+-3.6658 1.2857 TD
+(TestReadString - WBuchner 6643140)Tj
 /TT8 1 Tf
 0 7 -7 0 70 46.8 Tm
 (1:)Tj
@@ -64,87 +64,31 @@ T*
 /TT8 1 Tf
 0 g
 2.4 0 TD
-( SysUtils;)Tj
+( SysUtils, ReadStringFunction;)Tj
 -4.2 -1.1429 TD
 (4:)Tj
 T*
-[(5:)-599.8(    )]TJ
+(5:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.2 0 TD
-(Function)Tj
+1.8 0 TD
+(procedure)Tj
 /TT8 1 Tf
 0 g
-4.8 0 TD
-( ReadString\(prompt : )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-12.6 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(\):)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-1.2 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(;)Tj
--30 -1.1429 TD
+5.4 0 TD
+( Main\(\);)Tj
+-7.2 -1.1429 TD
 [(6:)-599.8(    )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 4.2 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--4.2 -1.1429 TD
-[(7:)-599.8(        Write\(prompt\);)]TJ
-T*
-[(8:)-599.8(        ReadLn\(result\);)]TJ
-T*
-[(9:)-599.8(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.2 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--6.6 -1.1429 TD
-(10:)Tj
-T*
-[(11:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( ReadDouble\(prompt: )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-12 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(\): Double;)Tj
--25.2 -1.1429 TD
-[(12:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
 (var)Tj
 /TT8 1 Tf
 0 g
--4.8 -1.1429 TD
-[(13:)-599.7(        temp: )]TJ
+1.8 0 TD
+( )Tj
+-6 -1.1429 TD
+[(7:)-599.8(        name : )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 10.8 0 TD
@@ -154,7 +98,11 @@ T*
 3.6 0 TD
 (;)Tj
 -14.4 -1.1429 TD
-[(14:)-599.7(    )]TJ
+[(8:)-599.8(        age : Integer;)]TJ
+T*
+[(9:)-599.8(        aDouble : Double;)]TJ
+-0.6 -1.1429 TD
+[(10:)-599.7(    )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 4.8 0 TD
@@ -162,337 +110,7 @@ T*
 /TT8 1 Tf
 0 g
 -4.8 -1.1429 TD
-[(15:)-599.7(        temp := ReadString\(prompt\);)]TJ
-T*
-[(16:)-599.7(        )]TJ
-T*
-[(17:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(while)Tj
-/TT8 1 Tf
-0 g
-3 0 TD
-( )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-0.6 0 TD
-(not)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-( TryStrToFloat\(temp, result\) )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-17.4 0 TD
-(do)Tj
-/TT8 1 Tf
-0 g
--30 -1.1429 TD
-[(18:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--7.2 -1.1429 TD
-[(19:)-599.7(            WriteLn\()]TJ
-/TT10 1 Tf
-0.737 0.561 0.561 rg
-14.4 0 TD
-(’Please enter a real number ’)Tj
-/TT8 1 Tf
-0 g
-17.4 0 TD
-(\);)Tj
--31.8 -1.1429 TD
-[(20:)-599.7(            temp := ReadString\(prompt\);)]TJ
-T*
-[(21:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--9 -1.1429 TD
-[(22:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--6.6 -1.1429 TD
-(23:)Tj
-T*
-[(24:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(Function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( ReadInt\(prompt : )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-10.8 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(\):Integer;)Tj
--24 -1.1429 TD
-[(25:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(var)Tj
-/TT8 1 Tf
-0 g
--4.8 -1.1429 TD
-[(26:)-599.7(        temp : )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-11.4 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(;)Tj
--15 -1.1429 TD
-[(27:)-599.7(        age : Integer;)]TJ
-T*
-[(28:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--4.8 -1.1429 TD
-[(29:)-599.7(        //temp := ReadString\(prompt\);)]TJ
-T*
-[(30:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(while)Tj
-/TT8 1 Tf
-0 g
-3 0 TD
-( )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-0.6 0 TD
-(not)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-( TryStrToInt\(ReadString\(prompt\),age\) )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-22.2 0 TD
-(do)Tj
-/TT8 1 Tf
-0 g
--34.8 -1.1429 TD
-[(31:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--7.2 -1.1429 TD
-[(32:)-599.7(            WriteLn\()]TJ
-/TT10 1 Tf
-0.737 0.561 0.561 rg
-14.4 0 TD
-(’Please enter a whole number :’)Tj
-/TT8 1 Tf
-0 g
-18.6 0 TD
-(\);)Tj
--33 -1.1429 TD
-[(33:)-599.7(            ReadLn\(temp\);)]TJ
-T*
-[(34:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--9 -1.1429 TD
-[(35:)-599.7(        result := age;)]TJ
-T*
-[(36:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--6.6 -1.1429 TD
-(37:)Tj
-T*
-[(38:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( ReadIntegerRange\(prompt : )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-16.2 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-( ; min, max : Integer\):Integer;)Tj
--29.4 -1.1429 TD
-[(39:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--4.8 -1.1429 TD
-[(40:)-599.7(        result := ReadInt\(prompt\);)]TJ
-T*
-[(41:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(While)Tj
-/TT8 1 Tf
-0 g
-3 0 TD
-( \(result < min\) )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-9.6 0 TD
-(or)Tj
-/TT8 1 Tf
-0 g
-1.2 0 TD
-( \(result > max\) )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-9.6 0 TD
-(do)Tj
-/TT8 1 Tf
-0 g
--30.6 -1.1429 TD
-[(42:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--7.2 -1.1429 TD
-[(43:)-599.7(            WriteLn\()]TJ
-/TT10 1 Tf
-0.737 0.561 0.561 rg
-14.4 0 TD
-(’Please enter a value between ’)Tj
-/TT8 1 Tf
-0 g
-18.6 0 TD
-(,min,)Tj
-/TT10 1 Tf
-0.737 0.561 0.561 rg
-3 0 TD
-(’ and ’)Tj
-/TT8 1 Tf
-0 g
-4.2 0 TD
-(, max\);)Tj
--40.2 -1.1429 TD
-[(44:)-599.7(            result:= ReadInt\(prompt\);)]TJ
-T*
-[(45:)-599.7(        )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-7.2 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--9 -1.1429 TD
-[(46:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--6.6 -1.1429 TD
-(47:)Tj
-T*
-[(48:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(procedure)Tj
-/TT8 1 Tf
-0 g
-5.4 0 TD
-( Main\(\);)Tj
--10.2 -1.1429 TD
-[(49:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(var)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-( )Tj
--6.6 -1.1429 TD
-[(50:)-599.7(        name : )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-11.4 0 TD
-(String)Tj
-/TT8 1 Tf
-0 g
-3.6 0 TD
-(;)Tj
--15 -1.1429 TD
-[(51:)-599.7(        age : Integer;)]TJ
-T*
-[(52:)-599.7(        aDouble : Double;)]TJ
-T*
-[(53:)-599.7(    )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-4.8 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--4.8 -1.1429 TD
-[(54:)-599.7(        name := ReadString\()]TJ
+[(11:)-599.7(        name := ReadString\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
 18.6 0 TD
@@ -502,7 +120,7 @@ T*
 10.2 0 TD
 (\);)Tj
 -28.8 -1.1429 TD
-[(55:)-599.7(        age := ReadIntegerRange\()]TJ
+[(12:)-599.7(        age := ReadIntegerRange\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
 21.6 0 TD
@@ -512,7 +130,7 @@ T*
 10.8 0 TD
 (,1,50\);)Tj
 -32.4 -1.1429 TD
-[(56:)-599.7(        aDouble := ReadDouble\()]TJ
+[(13:)-599.7(        aDouble := ReadDouble\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
 20.4 0 TD
@@ -522,7 +140,7 @@ T*
 12.6 0 TD
 (\);)Tj
 -33 -1.1429 TD
-[(57:)-599.7(        WriteLn\()]TJ
+[(14:)-599.7(        WriteLn\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
 12 0 TD
@@ -548,19 +166,19 @@ T*
 14.4 0 TD
 (,aDouble:4:2\);)Tj
 -43.2 -1.1429 TD
-[(58:)-599.7(    )]TJ
+(15:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.8 0 TD
+2.4 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--6.6 -1.1429 TD
-(59:)Tj
+-4.2 -1.1429 TD
+(16:)Tj
 T*
-(60:)Tj
+(17:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -568,9 +186,9 @@ T*
 /TT8 1 Tf
 0 g
 -2.4 -1.1429 TD
-[(61:)-599.7(    Main\(\);)]TJ
+[(18:)-599.7(    Main\(\);)]TJ
 T*
-(62:)Tj
+(19:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -692,7 +310,7 @@ endobj
 /Subtype /TrueType
 /FirstChar 47
 /LastChar 58
-/Widths [278 500 500 500 500 0 500 500 0 500 0 333 ]
+/Widths [278 500 500 500 0 500 500 0 0 500 0 333 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Times-Bold
 /FontDescriptor 11 0 R
@@ -715,15 +333,13 @@ endobj
 /Type /Font
 /Subtype /TrueType
 /FirstChar 32
-/LastChar 146
-/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 250 0 
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-0 0 0 667 0 0 0 0 0 0 0 0 0 0 0 0 
+/LastChar 117
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 333 250 0 
+500 500 0 500 500 0 500 0 0 0 0 0 0 0 0 0 
+0 0 667 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 667 556 611 0 0 944 0 0 0 0 0 0 0 0 
-0 444 0 0 500 444 0 500 0 278 0 0 0 0 500 500 
-500 0 333 389 278 0 0 0 0 500 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-0 0 333 ]
+0 444 0 444 500 444 0 500 500 278 0 0 0 0 500 0 
+500 0 333 389 278 500 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Times-Roman
 /FontDescriptor 13 0 R
@@ -735,12 +351,12 @@ endobj
 /Subtype /TrueType
 /FirstChar 32
 /LastChar 121
-/Widths [600 0 0 0 0 0 0 0 600 600 0 0 600 0 600 600 
-600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
+/Widths [600 0 0 0 0 0 0 0 600 600 0 0 600 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
 0 0 0 0 600 0 600 0 0 600 0 0 600 600 0 0 
 0 0 600 600 600 600 0 600 0 0 0 0 0 0 0 0 
-0 600 600 0 600 600 0 600 0 600 0 0 600 600 600 600 
-600 0 600 600 600 600 0 0 600 600 ]
+0 600 600 600 600 600 0 600 0 600 0 0 600 600 600 600 
+0 0 600 600 600 600 0 0 0 600 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Courier
 /FontDescriptor 14 0 R
@@ -754,10 +370,10 @@ endobj
 /LastChar 146
 /Widths [600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 600 0 0 0 0 0 
-0 0 0 0 0 600 600 0 600 0 0 0 0 0 600 0 
-600 0 0 600 0 0 0 600 0 600 0 0 0 0 0 0 
-0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
-600 0 600 600 600 600 600 600 0 600 0 0 0 0 0 0 
+0 0 0 0 0 600 0 0 600 0 0 0 0 0 600 0 
+0 0 0 600 0 0 0 0 0 600 0 0 0 0 0 0 
+0 600 600 600 600 600 0 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 600 0 0 600 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 600 ]
 /Encoding /WinAnsiEncoding
@@ -794,8 +410,8 @@ endobj
 endobj
 18 0 obj
 <<
-/CreationDate (D:20110328205642+11'00')
-/ModDate (D:20110328205642+11'00')
+/CreationDate (D:20110511224228+10'00')
+/ModDate (D:20110511224228+10'00')
 /Producer (Apple pstopdf)
 >>
 endobj
@@ -809,32 +425,32 @@ endobj
 xref
 0 20
 0000000000 65535 f 
-0000010582 00000 n 
+0000005431 00000 n 
 0000000016 00000 n 
-0000007582 00000 n 
-0000008860 00000 n 
-0000009064 00000 n 
-0000009234 00000 n 
-0000009675 00000 n 
-0000010116 00000 n 
-0000007722 00000 n 
-0000010731 00000 n 
-0000007862 00000 n 
-0000008064 00000 n 
-0000008270 00000 n 
-0000008467 00000 n 
-0000008658 00000 n 
-0000010663 00000 n 
-0000010691 00000 n 
-0000010824 00000 n 
-0000010947 00000 n 
+0000002499 00000 n 
+0000003777 00000 n 
+0000003979 00000 n 
+0000004149 00000 n 
+0000004542 00000 n 
+0000004975 00000 n 
+0000002639 00000 n 
+0000005580 00000 n 
+0000002779 00000 n 
+0000002981 00000 n 
+0000003187 00000 n 
+0000003384 00000 n 
+0000003575 00000 n 
+0000005512 00000 n 
+0000005540 00000 n 
+0000005673 00000 n 
+0000005796 00000 n 
 trailer
 <<
 /Size 20
 /Root 19 0 R
 /Info 18 0 R
-/ID [<95ab1ead6009ef756fd411be7caab90c><95ab1ead6009ef756fd411be7caab90c>]
+/ID [<d990f42d80823c4b668b0f299cd7a722><d990f42d80823c4b668b0f299cd7a722>]
 >>
 startxref
-11017
+5866
 %%EOF

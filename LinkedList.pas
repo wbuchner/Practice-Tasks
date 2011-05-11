@@ -1,11 +1,14 @@
 program LinkedList;
 
+uses
+  sysUtils;
 type 
   NodePtr = ^Node;
   
   Node = record
     data  : Integer;
     next  : NodePtr;
+    prev  : NodePtr;
   end;
 
   LinkedLst = record
@@ -14,11 +17,12 @@ type
   end;
 
 // Create Node
-function CreateNode(data : Integer; next : NodePtr): NodePtr;
+function CreateNode(data : Integer; next,prev : NodePtr): NodePtr;
 begin
   New(result);
   result^.data := data;
   result^.next := next;
+  result^.prev := prev;
 end;
 
 // Dispose all nodes
@@ -33,10 +37,27 @@ begin
 end;
 
 // Insert After Function
-function InsertAfter(n: NodePtr; data: Integer): NodePtr;
+function InsertBefore(data: Integer; n, p : NodePtr): NodePtr;
 begin
-  result := CreateNode(data, n^.next); // follow n 
+  result := CreateNode(data, n^.next, p^.prev^.prev); // follow n 
   n^.next := result;
+  p^.prev := result;
+end;
+
+// Insert After Function
+function InsertAfter(data: Integer; n, p : NodePtr): NodePtr;
+begin
+  result := CreateNode(data, n^.next, p^.prev); // follow n 
+  n^.prev := result;
+  p^.next := result;
+end;
+
+// Insert At Start of List
+function PrependNode(data: Integer; n, p : NodePtr): NodePtr;
+begin
+  result := CreateNode(data, n^.next^.next, p^.prev^.prev);
+  n^.next := result;
+  p^.prev := nil;
   
 end;
 
@@ -59,9 +80,9 @@ procedure PrintFrom(n: NodePtr);
 begin
   if n <> nil then
     begin
-      Write(n^.data, ' -> ');
+      Write(n^.data,' -> ');
       PrintFrom(n^.next);
-    end
+     end
     else
     begin
       WriteLn('nil');
@@ -92,13 +113,17 @@ procedure Main();
 var
   start: NodePtr;
 begin
-  start := CreateNode(1, nil);
-  start := CreateNode(2, start);
-  InsertAfter(start, 3);
-  InsertAfter(start^.next, 4);
-  InsertAfter(start^.next^.next, 5);
+  start := CreateNode(1, nil, nil);
+  start := CreateNode(2, start, start);
+  InsertBefore(8, start, start);
+  start := CreateNode(3, start, start);
+  InsertBefore(4, start, start);
+  // AppendNode(start^.next, 4);
+  // AppendNode(start^.next^.next, 5);
   WriteLn('Count is ', Count(start));
-  
+
+  PrependNode(start^.data, start^.prev, start^.next);
+
   PrintFrom(start);
   PrintBackTo(start);
   WriteLn();
