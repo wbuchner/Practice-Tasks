@@ -25,7 +25,6 @@ begin
   end; 
 end;
 
-
 procedure MoveDisc (n, fromPole, toPole, tempPole: Integer);
 begin
   if n > 0 then

@@ -8,21 +8,26 @@ type
   Node = record
     data  : Integer;
     next  : NodePtr;
-    prev  : NodePtr;
   end;
 
   LinkedLst = record
-    start: NodePtr;
-    last: NodePtr;
+    start   : NodePtr;
+    finish  : NodePtr;
   end;
 
+procedure CreateList(var list: LinkedLst);
+begin
+  list.start := nil;
+  list.finish := nil;
+end;
+
+
 // Create Node
-function CreateNode(data : Integer; next,prev : NodePtr): NodePtr;
+function CreateNode(data : Integer; next : NodePtr): NodePtr;
 begin
   New(result);
   result^.data := data;
   result^.next := next;
-  result^.prev := prev;
 end;
 
 // Dispose all nodes
@@ -37,28 +42,30 @@ begin
 end;
 
 // Insert After Function
-function InsertBefore(data: Integer; n, p : NodePtr): NodePtr;
+function InsertBefore(data: Integer; n : NodePtr): NodePtr;
 begin
-  result := CreateNode(data, n^.next, p^.prev^.prev); // follow n 
+  result := CreateNode(data, n^.next); // follow n 
   n^.next := result;
-  p^.prev := result;
 end;
 
 // Insert After Function
-function InsertAfter(data: Integer; n, p : NodePtr): NodePtr;
+function InsertAfter(data: Integer; n : NodePtr): NodePtr;
 begin
-  result := CreateNode(data, n^.next, p^.prev); // follow n 
-  n^.prev := result;
-  p^.next := result;
-end;
+  result := CreateNode(data, n^.next); // follow n 
+  n^.next := result;
+ end;
 
 // Insert At Start of List
-function PrependNode(data: Integer; n, p : NodePtr): NodePtr;
+function PrependNode(data: Integer; n : NodePtr): NodePtr;
 begin
-  result := CreateNode(data, n^.next^.next, p^.prev^.prev);
+  result := CreateNode(data, n^.next^.next);
   n^.next := result;
-  p^.prev := nil;
   
+end;
+
+function FindNode(list, value : nodePtr): NodePtr;
+begin
+  result := nil;
 end;
 
 // Print Nodes
@@ -112,17 +119,20 @@ end;
 procedure Main();
 var
   start: NodePtr;
+  list : LinkedLst;
+  
 begin
-  start := CreateNode(1, nil, nil);
-  start := CreateNode(2, start, start);
-  InsertBefore(8, start, start);
-  start := CreateNode(3, start, start);
-  InsertBefore(4, start, start);
+  CreateList(list);
+  start := CreateNode(1, nil);
+  start := CreateNode(2, start);
+  InsertBefore(8, start);
+  start := CreateNode(3, start);
+  InsertBefore(4, start);
   // AppendNode(start^.next, 4);
   // AppendNode(start^.next^.next, 5);
   WriteLn('Count is ', Count(start));
 
-  PrependNode(start^.data, start^.prev, start^.next);
+  //PrependNode(start^.data, start^.prev);
 
   PrintFrom(start);
   PrintBackTo(start);

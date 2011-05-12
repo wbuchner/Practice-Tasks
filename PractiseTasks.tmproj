@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>ChangeCalculator.pas</string>
+	<string>newList.pas</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -34,7 +34,7 @@
 			<key>filename</key>
 			<string>DynamicMemory.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-01T09:42:58Z</date>
+			<date>2011-05-12T11:27:14Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -94,6 +94,18 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>ReadStringFunction.pas</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T10:44:03Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>TestReadString.pas</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T10:44:04Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>TestReadString</string>
 		</dict>
 		<dict>
@@ -150,7 +162,7 @@
 			<key>filename</key>
 			<string>TestReadString.pas</string>
 			<key>lastUsed</key>
-			<date>2011-04-06T08:52:45Z</date>
+			<date>2011-05-11T12:42:54Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -252,9 +264,7 @@
 			<key>filename</key>
 			<string>ChangeCalculator.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-08T00:28:08Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-05-12T10:44:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -266,13 +276,13 @@
 			<key>filename</key>
 			<string>PointerTests.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:16:13Z</date>
+			<date>2011-05-12T11:27:15Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>PointerArithmaticTest.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:14:46Z</date>
+			<date>2011-05-12T11:27:20Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -284,99 +294,63 @@
 			<key>filename</key>
 			<string>ProcessTest.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:14:46Z</date>
+			<date>2011-05-12T11:27:20Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>StackTestFrame.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:14:53Z</date>
+			<date>2011-05-12T11:27:19Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>StackTest.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:15:02Z</date>
+			<date>2011-05-12T11:48:33Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>TestSize.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:15:03Z</date>
+			<date>2011-05-12T11:27:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>maze.txt</string>
 			<key>lastUsed</key>
-			<date>2011-05-04T11:23:48Z</date>
+			<date>2011-05-12T10:44:10Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>TowersHanoi.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-07T12:05:54Z</date>
+			<date>2011-05-12T10:44:06Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>MazeGame.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-07T11:27:52Z</date>
+			<date>2011-05-12T11:27:22Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>newList.pas</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T12:53:38Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>LinkedList.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-08T00:28:08Z</date>
+			<date>2011-05-12T12:53:38Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>ChangeCalculator.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>195</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>177</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>43</integer>
-				<key>line</key>
-				<integer>195</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>195</integer>
-			</dict>
-		</dict>
-		<key>DynamicMemory.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>12</integer>
-				<key>line</key>
-				<integer>10</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>Game Concept.tex</key>
 		<dict>
 			<key>caret</key>
@@ -410,28 +384,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>71</integer>
+				<integer>85</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>MazeGame.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>30</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>2</integer>
+			<integer>44</integer>
 		</dict>
 		<key>MyFriendsExt.pas</key>
 		<dict>
@@ -447,107 +407,35 @@
 			<key>firstVisibleLine</key>
 			<integer>12</integer>
 		</dict>
-		<key>PointerArithmaticTest.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>40</integer>
-				<key>line</key>
-				<integer>22</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>4</integer>
-				<key>line</key>
-				<integer>22</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>40</integer>
-				<key>line</key>
-				<integer>22</integer>
-			</dict>
-		</dict>
-		<key>PointerTests.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>43</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>33</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>43</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-		</dict>
-		<key>ProcessTest.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>4</integer>
-				<key>line</key>
-				<integer>28</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>StackTest.pas</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>45</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>11</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>StackTestFrame.pas</key>
-		<dict>
-			<key>caret</key>
+			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>37</integer>
 				<key>line</key>
-				<integer>21</integer>
+				<integer>11</integer>
 			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>45</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
 		</dict>
 		<key>SwallowAirSpeedVelocity.pas</key>
 		<dict>
@@ -557,20 +445,6 @@
 				<integer>11</integer>
 				<key>line</key>
 				<integer>25</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>TestSize.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>31</integer>
-				<key>line</key>
-				<integer>21</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -591,20 +465,6 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>TowersHanoi.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>22</integer>
-				<key>line</key>
-				<integer>43</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>Variables.pas</key>
 		<dict>
 			<key>caret</key>
@@ -619,55 +479,30 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>maze.txt</key>
+		<key>newList.pas</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>51</integer>
 				<key>line</key>
-				<integer>21</integer>
+				<integer>87</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>21</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>4</integer>
-				<key>line</key>
-				<integer>21</integer>
-			</dict>
+			<integer>52</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>DynamicMemory.pas</string>
-		<string>PointerTests.pas</string>
-		<string>TestSize.pas</string>
-		<string>StackTest.pas</string>
-		<string>StackTestFrame.pas</string>
-		<string>ProcessTest.pas</string>
-		<string>PointerArithmaticTest.pas</string>
-		<string>MazeGame.pas</string>
-		<string>TowersHanoi.pas</string>
 		<string>LinkedList.pas</string>
-		<string>ChangeCalculator.pas</string>
-		<string>maze.txt</string>
+		<string>newList.pas</string>
+		<string>StackTest.pas</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
+	<true/>
 	<key>windowFrame</key>
-	<string>{{26, 18}, {1061, 1400}}</string>
+	<string>{{1008, 32}, {1469, 1386}}</string>
 </dict>
 </plist>
