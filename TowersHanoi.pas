@@ -20,8 +20,7 @@ begin
   end
   else
   begin    
-    WriteLn('fibonacci ',n);
-   result := fib(n-2) + fib(n-1);
+    result := fib(n-2) + fib(n-1);
   end; 
 end;
 
@@ -38,7 +37,7 @@ procedure Main();
 begin
   MoveDisc(3, 1, 3, 2);
   WriteLn('------------------------------');
-  WriteLn('Fibonnaci of number 9 is :',fib(9));
+  WriteLn('Fib(5) = ', fib(5));
   WriteLn('------------------------------');
   WriteLn(Power(2,8));
 end;

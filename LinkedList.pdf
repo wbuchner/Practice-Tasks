@@ -2,7 +2,7 @@
 %âãÏÓ
 2 0 obj
 <<
-/Length 11336
+/Length 12221
 >>
 stream
 0 G
@@ -24,9 +24,9 @@ BT
 0 g
 0 Tc
 0 Tw
-(05/12/11)Tj
+(05/18/11)Tj
 -0.0552 -1.0667 TD
-(21:07:53)Tj
+(19:29:54)Tj
 ET
 0.7 g
 24 818 36 -72 re
@@ -126,9 +126,43 @@ T*
 1.8 0 TD
 (;)Tj
 -5.4 -1.1429 TD
-(17:)Tj
+[(17:)-599.7(  )]TJ
 T*
-(18:)Tj
+[(18:)-599.7(  // Add enumerated )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(type)Tj
+/TT8 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( change the operator )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the find Node )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+-41.4 -1.1429 TD
+[(19:)-599.7(  )]TJ
+T*
+(20:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -146,7 +180,7 @@ T*
 1.8 0 TD
 ( list: LinkedLst\);)Tj
 -16.8 -1.1429 TD
-(19:)Tj
+(21:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -154,7 +188,7 @@ T*
 /TT8 1 Tf
 0 g
 -2.4 -1.1429 TD
-[(20:)-599.7(  list.start := )]TJ
+[(22:)-599.7(  list.start := )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 12 0 TD
@@ -164,7 +198,7 @@ T*
 1.8 0 TD
 (;)Tj
 -13.8 -1.1429 TD
-[(21:)-599.7(  list.finish := )]TJ
+[(23:)-599.7(  list.finish := )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 12.6 0 TD
@@ -174,7 +208,7 @@ T*
 1.8 0 TD
 (;)Tj
 -14.4 -1.1429 TD
-(22:)Tj
+(24:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -184,13 +218,13 @@ T*
 1.8 0 TD
 (;)Tj
 -4.2 -1.1429 TD
-(23:)Tj
-T*
-(24:)Tj
-T*
-[(25:)-599.7(// Create Node)]TJ
+(25:)Tj
 T*
 (26:)Tj
+T*
+[(27:)-599.7(// Create Node)]TJ
+T*
+(28:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -200,7 +234,7 @@ T*
 4.8 0 TD
 ( CreateNode\(data : Integer; next : NodePtr\): NodePtr;)Tj
 -7.2 -1.1429 TD
-(27:)Tj
+(29:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -208,13 +242,13 @@ T*
 /TT8 1 Tf
 0 g
 -2.4 -1.1429 TD
-[(28:)-599.7(  New\(result\);)]TJ
+[(30:)-599.7(  New\(result\);)]TJ
 T*
-[(29:)-599.7(  result^.data := data;)]TJ
+[(31:)-599.7(  result^.data := data;)]TJ
 T*
-[(30:)-599.7(  result^.next := next;)]TJ
+[(32:)-599.7(  result^.next := next;)]TJ
 T*
-(31:)Tj
+(33:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
@@ -224,14 +258,572 @@ T*
 1.8 0 TD
 (;)Tj
 -4.2 -1.1429 TD
-(32:)Tj
-T*
-[(33:)-599.7(// Dispose all nodes)]TJ
-T*
 (34:)Tj
+T*
+(35:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( NodeCount\(list: NodePtr; value: Integer\): Integer;)Tj
+-7.2 -1.1429 TD
+(36:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(37:)-599.7(  result := 0;)]TJ
+T*
+[(38:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(Assigned\(list\)\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.8 0 TD
+(AND)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \(list^.data <> value\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-33 -1.1429 TD
+[(39:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3.6 -1.1429 TD
+[(40:)-599.7(    list := list^.next;)]TJ
+T*
+[(41:)-599.7(    result := result + 1;)]TJ
+T*
+[(42:)-599.7(   )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+(43:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(44:)Tj
+T*
+(45:)Tj
+T*
+(46:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( FindNode\(list: NodePtr; value: Integer\): NodePtr;)Tj
+-7.2 -1.1429 TD
+(47:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(48:)-599.7(  current : NodePtr;)]TJ
+T*
+(49:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(50:)-599.7(  result := )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-11.4 -1.1429 TD
+[(51:)-599.7(  current := list;)]TJ
+T*
+(52:)Tj
+T*
+[(53:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(Assigned\(current\)\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(AND)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \(current^.data <> value\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+15.6 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-36.6 -1.1429 TD
+[(54:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3.6 -1.1429 TD
+[(55:)-599.7(    current := current^.next;)]TJ
+T*
+[(56:)-599.7(    result := current;)]TJ
+T*
+[(57:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-5.4 -1.1429 TD
+[(58:)-599.7( )]TJ
+T*
+(59:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(60:)Tj
+T*
+[(61:)-599.7(// new find previous)]TJ
+T*
+[(62:)-599.7(// )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( FindPreviousNode\(list, ofNode: NodePtr; val: Integer\) : NodePtr;)Tj
+-9 -1.1429 TD
+[(63:)-599.7(// )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+52.5143 70.8571 TD
+[(64:)-599.7(// current, previous : NodePtr;)]TJ
+0 -1.1429 TD
+[(65:)-599.7(// )]TJ
+T*
+[(66:)-599.7(// )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(67:)-599.7(//   current := list;)]TJ
+T*
+[(68:)-599.7(//   previous := )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-14.4 -1.1429 TD
+[(69:)-599.7(//   WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+(’val in FindPrevNode’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, val\);)Tj
+-22.8 -1.1429 TD
+[(70:)-599.7(//   )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(while)Tj
+/TT8 1 Tf
+0 g
+3 0 TD
+( \(current <> ofNode\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( \(current <> )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\) )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-33.6 -1.1429 TD
+[(71:)-599.7(//   )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-5.4 -1.1429 TD
+[(72:)-599.7(//   // pass )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the value )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+6.6 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( it will return the previous node)Tj
+-19.8 -1.1429 TD
+[(73:)-599.7(//    previous := current;)]TJ
+T*
+[(74:)-599.7(//    current := current^.next;)]TJ
+T*
+[(75:)-599.7(//   )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-7.2 -1.1429 TD
+[(76:)-599.7(//   result := previous;)]TJ
+T*
+[(77:)-599.7(// )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+(78:)Tj
+T*
+(79:)Tj
+T*
+(80:)Tj
+T*
+(81:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( FindPreviousNode\(list: NodePtr; val: Integer\) : NodePtr;)Tj
+-7.2 -1.1429 TD
+(82:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(83:)-599.7(  i : Integer;)]TJ
+T*
+(84:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(85:)-599.7(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’val in FindPrevNode’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, val\);)Tj
+-21 -1.1429 TD
+[(86:)-599.7(  i := 0;)]TJ
+T*
+[(87:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i:= 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( val-2 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-15 -1.1429 TD
+[(88:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3.6 -1.1429 TD
+[(89:)-599.7(  // pass )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the value )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+6.6 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( it will return the previous node)Tj
+-18 -1.1429 TD
+[(90:)-599.7(    list := list^.next;)]TJ
+T*
+[(91:)-599.7(    result := list;)]TJ
+T*
+[(92:)-599.7(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-5.4 -1.1429 TD
+(93:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.2 -1.1429 TD
+(94:)Tj
+T*
+(95:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(function)Tj
+/TT8 1 Tf
+0 g
+4.8 0 TD
+( FindNextNode\(list: NodePtr; val: Integer\) : NodePtr;)Tj
+-7.2 -1.1429 TD
+(96:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(97:)-599.7(  i : Integer;)]TJ
+T*
+(98:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-2.4 -1.1429 TD
+[(99:)-599.7(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+8.4 0 TD
+(’val in FindPrevNode’)Tj
+/TT8 1 Tf
+0 g
+12.6 0 TD
+(, val\);)Tj
+-21.6 -1.1429 TD
+[(100:)-599.6(  i := 0;)]TJ
+T*
+[(101:)-599.6( )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(for)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( i:= 0 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(to)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( val-1 )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(do)Tj
+/TT8 1 Tf
+0 g
+-15 -1.1429 TD
+[(102:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(103:)-599.6(  // pass )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(in)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( the value )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+6.6 0 TD
+(and)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( it will return the previous node)Tj
+-18.6 -1.1429 TD
+[(104:)-599.6(    list := list^.next;)]TJ
+T*
+[(105:)-599.6(    result := list;)]TJ
+T*
+[(106:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+(107:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(108:)Tj
+T*
+[(109:)-599.6(// Dispose all nodes)]TJ
+T*
+(110:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
 (procedure)Tj
 /TT8 1 Tf
 0 g
@@ -245,19 +837,19 @@ T*
 0 g
 1.8 0 TD
 ( start: NodePtr\);)Tj
--18 -1.1429 TD
-(35:)Tj
+-18.6 -1.1429 TD
+(111:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--2.4 -1.1429 TD
-[(36:)-599.7(  )]TJ
+-3 -1.1429 TD
+[(112:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (if)Tj
 /TT8 1 Tf
 0 g
@@ -277,200 +869,20 @@ T*
 (then)Tj
 /TT8 1 Tf
 0 g
--13.2 -1.1429 TD
-[(37:)-599.7(  )]TJ
+-13.8 -1.1429 TD
+[(113:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--3.6 -1.1429 TD
-[(38:)-599.7(  DisposeNodes\(start^.next\);)]TJ
-T*
-[(39:)-599.7(  Dispose\(start\);)]TJ
-T*
-[(40:)-599.7(  start := )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-9 0 TD
-(nil)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--10.8 -1.1429 TD
-[(41:)-599.7(  )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-3.6 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--5.4 -1.1429 TD
-(42:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
 -4.2 -1.1429 TD
-(43:)Tj
+[(114:)-599.6(  DisposeNodes\(start^.next\);)]TJ
 T*
-[(44:)-599.7(// Insert After )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-12 0 TD
-(Function)Tj
-/TT8 1 Tf
-0 g
--12 -1.1429 TD
-(45:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( InsertBefore\(data: Integer; n : NodePtr\): NodePtr;)Tj
--7.2 -1.1429 TD
-(46:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--2.4 -1.1429 TD
-[(47:)-599.7(  result := CreateNode\(data, n^.next\); // follow n )]TJ
+[(115:)-599.6(  Dispose\(start\);)]TJ
 T*
-[(48:)-599.7(  n^.next := result;)]TJ
-T*
-(49:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--4.2 -1.1429 TD
-(50:)Tj
-T*
-[(51:)-599.7(// Insert After )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-12 0 TD
-(Function)Tj
-/TT8 1 Tf
-0 g
--12 -1.1429 TD
-(52:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( InsertAfter\(data: Integer; n : NodePtr\): NodePtr;)Tj
--7.2 -1.1429 TD
-(53:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--2.4 -1.1429 TD
-[(54:)-599.7(  result := CreateNode\(data, n^.next\); // follow n )]TJ
-T*
-[(55:)-599.7(  n^.next := result;)]TJ
-T*
-[(56:)-599.7( )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-3 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--4.8 -1.1429 TD
-(57:)Tj
-T*
-[(58:)-599.7(// Insert At Start )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-13.8 0 TD
-(of)Tj
-/TT8 1 Tf
-0 g
-1.2 0 TD
-( List)Tj
--15 -1.1429 TD
-(59:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( PrependNode\(data: Integer; n : NodePtr\): NodePtr;)Tj
--7.2 -1.1429 TD
-(60:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--2.4 -1.1429 TD
-[(61:)-599.7(  result := CreateNode\(data, n^.next^.next\);)]TJ
-T*
-[(62:)-599.7(  n^.next := result;)]TJ
-T*
-[(63:)-599.7(  )]TJ
-56.7143 70.8571 TD
-(64:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(end)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-(;)Tj
--4.2 -1.1429 TD
-(65:)Tj
-T*
-(66:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(function)Tj
-/TT8 1 Tf
-0 g
-4.8 0 TD
-( FindNode\(list, value : nodePtr\): NodePtr;)Tj
--7.2 -1.1429 TD
-(67:)Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-2.4 0 TD
-(begin)Tj
-/TT8 1 Tf
-0 g
--2.4 -1.1429 TD
-[(68:)-599.7(  result := )]TJ
+[(116:)-599.6(  start := )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 9.6 0 TD
@@ -480,42 +892,469 @@ T*
 1.8 0 TD
 (;)Tj
 -11.4 -1.1429 TD
-(69:)Tj
+[(117:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+4.2 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--4.2 -1.1429 TD
-(70:)Tj
-T*
-[(71:)-599.7(// Print Nodes)]TJ
-T*
-(72:)Tj
+-6 -1.1429 TD
+(118:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(119:)Tj
+T*
+[(120:)-599.6(// Insert before )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+13.2 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( determined by parameters)Tj
+-18.6 -1.1429 TD
+(121:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( InsertBefore\(list : NodePtr; beforeVal, val : Integer\);)Tj
+-8.4 -1.1429 TD
+(122:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(123:)-599.6(  nodeBefore, temp: NodePtr;)]TJ
+T*
+(124:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(125:)-599.6(  nodeBefore := FindPreviousNode\(list, NodeCount\(list, beforeVal\)\);)]TJ
+T*
+[(126:)-599.6(  temp := CreateNode\(val, nodeBefore^.next\);)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+12 0 obj
+<<
+/Length 11615
+>>
+stream
+0 G
+0 J 0 j 0.1 w 10 M []0 d
+/GS1 gs
+1 i 
+571 421 m
+60 421 l
+S
+0.95 g
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(05/18/11)Tj
+-0.0552 -1.0667 TD
+(19:29:54)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(2)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 379.2017 Tm
+0 g
+(LinkedList.pas)Tj
+-3.6658 1.2857 TD
+(LinkedList - WBuchner 6643140)Tj
+/TT8 1 Tf
+0 7 -7 0 70 38.4 Tm
+[(127:)-599.6(  nodeBefore^.next := temp;)]TJ
+0 -1.1429 TD
+(128:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(129:)Tj
+T*
+[(130:)-599.6(// Insert after )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( determined by parameters)Tj
+-18 -1.1429 TD
+(131:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( InsertAfter\(list : NodePtr; beforeVal, val : Integer\);)Tj
+-8.4 -1.1429 TD
+(132:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(133:)-599.6(  nodeBefore, temp: NodePtr;)]TJ
+T*
+(134:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(135:)-599.6(  // find the node before)]TJ
+T*
+[(136:)-599.6(  nodeBefore := FindNextNode\(list, NodeCount\(list, beforeVal\)\);  )]TJ
+T*
+[(137:)-599.6(  )]TJ
+T*
+[(138:)-599.6(  temp := CreateNode\(val, nodeBefore^.next\);)]TJ
+T*
+[(139:)-599.6(  nodeBefore^.next := temp;)]TJ
+T*
+(140:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(141:)Tj
+T*
+[(142:)-599.6(// Insert At Start )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(of)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( List)Tj
+-15.6 -1.1429 TD
+(143:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( PrependNode\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( linked: LinkedLst; value: Integer\);)Tj
+-18 -1.1429 TD
+(144:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(145:)-599.6(  temp : NodePtr;)]TJ
+T*
+(146:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(147:)-599.6(  temp := CreateNode\(value, linked.start\);)]TJ
+T*
+[(148:)-599.6(  linked.start := temp;)]TJ
+T*
+[(149:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( linked.finish = )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-18 -1.1429 TD
+[(150:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(151:)-599.6(    linked.finish := temp;)]TJ
+T*
+[(152:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+(153:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(154:)Tj
+T*
+(155:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(procedure)Tj
+/TT8 1 Tf
+0 g
+5.4 0 TD
+( AppendNode\()Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( linked: LinkedLst; value: Integer\);)Tj
+-17.4 -1.1429 TD
+(156:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(var)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(157:)-599.6(  temp : NodePtr;)]TJ
+T*
+(158:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-3 -1.1429 TD
+[(159:)-599.6(  temp := CreateNode\(value, )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(\);)Tj
+-21.6 -1.1429 TD
+[(160:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(if)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+( linked.finish <> )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+10.8 0 TD
+(nil)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+( )Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(then)Tj
+/TT8 1 Tf
+0 g
+-18.6 -1.1429 TD
+[(161:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(162:)-599.6(    linked.finish^.next := temp;)]TJ
+T*
+[(163:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(164:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(else)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(165:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(begin)Tj
+/TT8 1 Tf
+0 g
+-4.2 -1.1429 TD
+[(166:)-599.6(    // list is empty)]TJ
+T*
+[(167:)-599.6(    linked.start := temp;)]TJ
+T*
+[(168:)-599.6(  )]TJ
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-6 -1.1429 TD
+[(169:)-599.6(  )]TJ
+T*
+[(170:)-599.6(  linked.finish := temp;)]TJ
+T*
+(171:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
+(end)Tj
+/TT8 1 Tf
+0 g
+1.8 0 TD
+(;)Tj
+-4.8 -1.1429 TD
+(172:)Tj
+T*
+[(173:)-599.6(// Print Nodes)]TJ
+T*
+(174:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
 (procedure)Tj
 /TT8 1 Tf
 0 g
 5.4 0 TD
 ( PrintBackTo\(n: NodePtr\);)Tj
--7.8 -1.1429 TD
-(73:)Tj
+-8.4 -1.1429 TD
+(175:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--2.4 -1.1429 TD
-[(74:)-599.7(  )]TJ
+-3 -1.1429 TD
+[(176:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (if)Tj
 /TT8 1 Tf
 0 g
@@ -535,107 +1374,117 @@ T*
 (then)Tj
 /TT8 1 Tf
 0 g
--12 -1.1429 TD
-[(75:)-599.7(  )]TJ
+-12.6 -1.1429 TD
+[(177:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--3.6 -1.1429 TD
-[(76:)-599.7(  PrintBackTo\(n^.next\);)]TJ
+-4.2 -1.1429 TD
+[(178:)-599.6(  PrintBackTo\(n^.next\);)]TJ
 T*
-[(77:)-599.7(  Write\()]TJ
+[(179:)-599.6(  Write\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
-7.2 0 TD
+7.8 0 TD
 (’ <- ’)Tj
 /TT8 1 Tf
 0 g
 3.6 0 TD
 (, n^.data\);)Tj
--10.8 -1.1429 TD
-[(78:)-599.7(  )]TJ
+-11.4 -1.1429 TD
+[(180:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
--3.6 -1.1429 TD
-[(79:)-599.7(  )]TJ
+-4.2 -1.1429 TD
+[(181:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (else)Tj
 /TT8 1 Tf
 0 g
--3.6 -1.1429 TD
-[(80:)-599.7(  )]TJ
+-4.2 -1.1429 TD
+[(182:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--3.6 -1.1429 TD
-[(81:)-599.7(    Write\()]TJ
+-4.2 -1.1429 TD
+[(183:)-599.6(    Write\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
-8.4 0 TD
+9 0 TD
 (’nil’)Tj
 /TT8 1 Tf
 0 g
 3 0 TD
 (\);)Tj
--11.4 -1.1429 TD
-[(82:)-599.7(  )]TJ
+-12 -1.1429 TD
+[(184:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--5.4 -1.1429 TD
-(83:)Tj
+-6 -1.1429 TD
+(185:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--4.2 -1.1429 TD
-(84:)Tj
+-4.8 -1.1429 TD
+(186:)Tj
 T*
-[(85:)-599.7(// Print From Node)]TJ
+[(187:)-599.6(// Print From Node)]TJ
 T*
-(86:)Tj
+[(188:)-599.6(// )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+4.8 0 TD
+(In)Tj
+/TT8 1 Tf
+0 g
+1.2 0 TD
+(: NodePtr = list.start )Tj
+-6 -1.1429 TD
+(189:)Tj
+/TT10 1 Tf
+0.627 0.125 0.941 rg
+3 0 TD
 (procedure)Tj
 /TT8 1 Tf
 0 g
 5.4 0 TD
 ( PrintFrom\(n: NodePtr\);)Tj
--7.8 -1.1429 TD
-(87:)Tj
+48.3143 70.8571 TD
+(190:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--2.4 -1.1429 TD
-[(88:)-599.7(  )]TJ
+-3 -1.1429 TD
+[(191:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-3.6 0 TD
+4.2 0 TD
 (if)Tj
 /TT8 1 Tf
 0 g
@@ -655,88 +1504,88 @@ T*
 (then)Tj
 /TT8 1 Tf
 0 g
--10.8 -1.1429 TD
-[(89:)-599.7(    )]TJ
+-11.4 -1.1429 TD
+[(192:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.8 0 TD
+4.2 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--4.8 -1.1429 TD
-[(90:)-599.7(      Write\(n^.data,)]TJ
+-4.2 -1.1429 TD
+[(193:)-599.6(  Write\(n^.data,)]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
-14.4 0 TD
+12.6 0 TD
 (’ -> ’)Tj
 /TT8 1 Tf
 0 g
 3.6 0 TD
 (\);)Tj
--18 -1.1429 TD
-[(91:)-599.7(      PrintFrom\(n^.next\);)]TJ
+-16.2 -1.1429 TD
+[(194:)-599.6(  PrintFrom\(n^.next\);)]TJ
 T*
-[(92:)-599.7(     )]TJ
+[(195:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-5.4 0 TD
+4.2 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
--5.4 -1.1429 TD
-[(93:)-599.7(    )]TJ
+-4.2 -1.1429 TD
+[(196:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.8 0 TD
+4.2 0 TD
 (else)Tj
 /TT8 1 Tf
 0 g
--4.8 -1.1429 TD
-[(94:)-599.7(    )]TJ
+-4.2 -1.1429 TD
+[(197:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.8 0 TD
+4.2 0 TD
 (begin)Tj
 /TT8 1 Tf
 0 g
--4.8 -1.1429 TD
-[(95:)-599.7(      WriteLn\()]TJ
+-4.2 -1.1429 TD
+[(198:)-599.6(  WriteLn\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
-10.8 0 TD
+9 0 TD
 (’nil’)Tj
 /TT8 1 Tf
 0 g
 3 0 TD
 (\);)Tj
--13.8 -1.1429 TD
-[(96:)-599.7(    )]TJ
+-12 -1.1429 TD
+[(199:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-4.8 0 TD
+4.2 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--6.6 -1.1429 TD
-[(97:)-599.7(    //WriteLn\(\);)]TJ
+-6 -1.1429 TD
+[(200:)-599.6(    //WriteLn\(\);)]TJ
 T*
-(98:)Tj
+(201:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
-2.4 0 TD
+3 0 TD
 (end)Tj
 /TT8 1 Tf
 0 g
 1.8 0 TD
 (;)Tj
--4.2 -1.1429 TD
-(99:)Tj
--0.6 -1.1429 TD
-[(100:)-599.6(// Count nodes)]TJ
+-4.8 -1.1429 TD
+(202:)Tj
 T*
-(101:)Tj
+[(203:)-599.6(// Count nodes)]TJ
+T*
+(204:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -746,7 +1595,7 @@ T*
 4.8 0 TD
 ( Count\(n: NodePtr\):Integer;)Tj
 -7.8 -1.1429 TD
-(102:)Tj
+(205:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -754,9 +1603,9 @@ T*
 /TT8 1 Tf
 0 g
 -3 -1.1429 TD
-[(103:)-599.6(  current: NodePtr;)]TJ
+[(206:)-599.6(  current: NodePtr;)]TJ
 T*
-(104:)Tj
+(207:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -764,11 +1613,11 @@ T*
 /TT8 1 Tf
 0 g
 -3 -1.1429 TD
-[(105:)-599.6(  current := n;)]TJ
+[(208:)-599.6(  current := n;)]TJ
 T*
-[(106:)-599.6(  result := 0;)]TJ
+[(209:)-599.6(  result := 0;)]TJ
 T*
-[(107:)-599.6(  )]TJ
+[(210:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 4.2 0 TD
@@ -792,7 +1641,7 @@ T*
 /TT8 1 Tf
 0 g
 -18 -1.1429 TD
-[(108:)-599.6(  )]TJ
+[(211:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 4.2 0 TD
@@ -800,11 +1649,11 @@ T*
 /TT8 1 Tf
 0 g
 -4.2 -1.1429 TD
-[(109:)-599.6(    result +=1;)]TJ
+[(212:)-599.6(    result +=1;)]TJ
 T*
-[(110:)-599.6(    current := current^.next;  )]TJ
+[(213:)-599.6(    current := current^.next;  )]TJ
 T*
-[(111:)-599.6(  )]TJ
+[(214:)-599.6(  )]TJ
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 4.2 0 TD
@@ -814,45 +1663,9 @@ T*
 1.8 0 TD
 (;)Tj
 -6 -1.1429 TD
-[(112:)-599.6(  )]TJ
+[(215:)-599.6(  )]TJ
 T*
-[(113:)-599.6(  // )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-6 0 TD
-(if)Tj
-/TT8 1 Tf
-0 g
-1.2 0 TD
-( n <> )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-3.6 0 TD
-(nil)Tj
-/TT8 1 Tf
-0 g
-1.8 0 TD
-( )Tj
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-0.6 0 TD
-(then)Tj
-/TT8 1 Tf
-0 g
--13.2 -1.1429 TD
-[(114:)-599.6(  // result := 1+Count\(n^.next\))]TJ
-T*
-[(115:)-599.6(  // )]TJ
-/TT10 1 Tf
-0.627 0.125 0.941 rg
-6 0 TD
-(else)Tj
-/TT8 1 Tf
-0 g
--6 -1.1429 TD
-[(116:)-599.6(  //   result := 0;)]TJ
-T*
-(117:)Tj
+(216:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -862,9 +1675,9 @@ T*
 1.8 0 TD
 (;)Tj
 -4.8 -1.1429 TD
-(118:)Tj
+(217:)Tj
 T*
-(119:)Tj
+(218:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -874,7 +1687,7 @@ T*
 5.4 0 TD
 ( Main\(\);)Tj
 -8.4 -1.1429 TD
-(120:)Tj
+(219:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -882,13 +1695,11 @@ T*
 /TT8 1 Tf
 0 g
 -3 -1.1429 TD
-[(121:)-599.6(  start: NodePtr;)]TJ
+[(220:)-599.6(  list : LinkedLst;)]TJ
 T*
-[(122:)-599.6(  list : LinkedLst;)]TJ
+[(221:)-599.6(  find : NodePtr;)]TJ
 T*
-[(123:)-599.6(  )]TJ
-T*
-(124:)Tj
+(222:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -896,21 +1707,149 @@ T*
 /TT8 1 Tf
 0 g
 -3 -1.1429 TD
-[(125:)-599.6(  CreateList\(list\);)]TJ
+[(223:)-599.6(  CreateList\(list\);)]TJ
 T*
-[(126:)-599.6(  start := CreateNode\(1, )]TJ
+[(224:)-599.6(  PrependNode\(list, 1\);)]TJ
+T*
+[(225:)-599.6(  PrependNode\(list, 5\);)]TJ
+T*
+[(226:)-599.6(  PrependNode\(list, 10\);)]TJ
+T*
+[(227:)-599.6(  PrependNode\(list, 15\);)]TJ
+T*
+[(228:)-599.6(  PrependNode\(list, 20\);)]TJ
+T*
+[(229:)-599.6(  AppendNode\(list, 99\);)]TJ
+T*
+[(230:)-599.6(  WriteLn\()]TJ
 /TT10 1 Tf
-0.627 0.125 0.941 rg
-18 0 TD
-(nil)Tj
+0.737 0.561 0.561 rg
+9 0 TD
+(’======================’)Tj
 /TT8 1 Tf
 0 g
-1.8 0 TD
+14.4 0 TD
 (\);)Tj
+-23.4 -1.1429 TD
+[(231:)-599.6(  PrintFrom\(list.start\);)]TJ
+T*
+[(232:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’======================’)Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-23.4 -1.1429 TD
+[(233:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’Start of the list data ’)Tj
+/TT8 1 Tf
+0 g
+15 0 TD
+(,list.start^.data\);)Tj
+-24 -1.1429 TD
+[(234:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’Finish of the list data ’)Tj
+/TT8 1 Tf
+0 g
+15.6 0 TD
+(,list.finish^.data\);)Tj
+-24.6 -1.1429 TD
+[(235:)-599.6(  PrependNode\(list, 30\);)]TJ
+T*
+[(236:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’Start of the list data ’)Tj
+/TT8 1 Tf
+0 g
+15 0 TD
+(,list.start^.data\);)Tj
+-24 -1.1429 TD
+[(237:)-599.6(  PrintFrom\(list.start\);)]TJ
+T*
+[(238:)-599.6( )]TJ
+T*
+[(239:)-599.6(  find := FindNode\(list.start, 10\);)]TJ
+T*
+[(240:)-599.6(  )]TJ
+T*
+[(241:)-599.6(  FindPreviousNode\(list.start, 2\);)]TJ
+T*
+[(242:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’Node Count :’)Tj
+/TT8 1 Tf
+0 g
+8.4 0 TD
+(,NodeCount\(list.start, 15\)\);)Tj
+-17.4 -1.1429 TD
+[(243:)-599.6(  )]TJ
+T*
+[(244:)-599.6( )]TJ
+T*
+[(245:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’======================’)Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-23.4 -1.1429 TD
+[(246:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’find ’)Tj
+/TT8 1 Tf
+0 g
+4.2 0 TD
+(, find^.data\);)Tj
+-13.2 -1.1429 TD
+[(247:)-599.6(  )]TJ
+T*
+[(248:)-599.6(  PrintFrom\(list.start\);)]TJ
+T*
+[(249:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’======================’)Tj
+/TT8 1 Tf
+0 g
+14.4 0 TD
+(\);)Tj
+-23.4 -1.1429 TD
+[(250:)-599.6(  )]TJ
+T*
+[(251:)-599.6(  find :=  FindPreviousNode\(list.start, NodeCount\(list.start, 10\)\);)]TJ
+T*
+[(252:)-599.6(  WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+9 0 TD
+(’Find Previous Node Function ’)Tj
+/TT8 1 Tf
+0 g
+18 0 TD
+(, find^.data\); )Tj
 ET
 endstream
 endobj
-3 0 obj
+13 0 obj
 <<
 /ProcSet [/PDF /Text ]
 /Font <<
@@ -925,9 +1864,9 @@ endobj
 >>
 >>
 endobj
-12 0 obj
+15 0 obj
 <<
-/Length 1609
+/Length 1316
 >>
 stream
 0 G
@@ -949,9 +1888,9 @@ BT
 0 g
 0 Tc
 0 Tw
-(05/12/11)Tj
+(05/18/11)Tj
 -0.0552 -1.0667 TD
-(21:07:53)Tj
+(19:29:54)Tj
 ET
 0.7 g
 24 818 36 -72 re
@@ -960,7 +1899,7 @@ BT
 /TT4 1 Tf
 0 28.8 -28.8 0 52.8 773.9915 Tm
 1 g
-(2)Tj
+(3)Tj
 /TT6 1 Tf
 0 14 -14 0 55.5 379.2017 Tm
 0 g
@@ -969,47 +1908,39 @@ BT
 (LinkedList - WBuchner 6643140)Tj
 /TT8 1 Tf
 0 7 -7 0 70 38.4 Tm
-[(127:)-599.6(  start := CreateNode\(2, start\);)]TJ
-0 -1.1429 TD
-[(128:)-599.6(  InsertBefore\(8, start\);)]TJ
-T*
-[(129:)-599.6(  start := CreateNode\(3, start\);)]TJ
-T*
-[(130:)-599.6(  InsertBefore\(4, start\);)]TJ
-T*
-[(131:)-599.6(  // AppendNode\(start^.next, 4\);)]TJ
-T*
-[(132:)-599.6(  // AppendNode\(start^.next^.next, 5\);)]TJ
-T*
-[(133:)-599.6(  WriteLn\()]TJ
+[(253:)-599.6(  //WriteLn\()]TJ
+/TT10 1 Tf
+0.737 0.561 0.561 rg
+10.2 0 TD
+(’Find Node ’)Tj
+/TT8 1 Tf
+0 g
+7.2 0 TD
+(, FindNode\(list,20\)\);)Tj
+-17.4 -1.1429 TD
+[(254:)-599.6(  WriteLn\()]TJ
 /TT10 1 Tf
 0.737 0.561 0.561 rg
 9 0 TD
-(’Count is ’)Tj
+(’======================’)Tj
 /TT8 1 Tf
 0 g
-6.6 0 TD
-(, Count\(start\)\);)Tj
--15.6 -1.1429 TD
-(134:)Tj
+14.4 0 TD
+(\);)Tj
+-23.4 -1.1429 TD
+[(255:)-599.6(  )]TJ
 T*
-[(135:)-599.6(  //PrependNode\(start^.data, start^.prev\);)]TJ
+[(256:)-599.6(  InsertBefore\(list.start, 15, 18\);)]TJ
 T*
-(136:)Tj
+[(257:)-599.6(  InsertAfter\(list.start, 15, 22\);)]TJ
 T*
-[(137:)-599.6(  PrintFrom\(start\);)]TJ
+[(258:)-599.6(  PrintFrom\(list.start\);)]TJ
 T*
-[(138:)-599.6(  PrintBackTo\(start\);)]TJ
+(259:)Tj
 T*
-[(139:)-599.6(  WriteLn\(\);)]TJ
+(260:)Tj
 T*
-[(140:)-599.6(  DisposeNodes\(start\);)]TJ
-T*
-[(141:)-599.6(  )]TJ
-T*
-[(142:)-599.6(  // start is = nill)]TJ
-T*
-(143:)Tj
+(261:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -1019,11 +1950,11 @@ T*
 1.8 0 TD
 (;)Tj
 -4.8 -1.1429 TD
-(144:)Tj
+(262:)Tj
 T*
-[(145:)-599.6(// Main executable)]TJ
+[(263:)-599.6(// Main executable)]TJ
 T*
-(146:)Tj
+(264:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -1031,9 +1962,9 @@ T*
 /TT8 1 Tf
 0 g
 -3 -1.1429 TD
-[(147:)-599.6(  Main\(\);)]TJ
+[(265:)-599.6(  Main\(\);)]TJ
 T*
-(148:)Tj
+(266:)Tj
 /TT10 1 Tf
 0.627 0.125 0.941 rg
 3 0 TD
@@ -1045,7 +1976,7 @@ T*
 ET
 endstream
 endobj
-13 0 obj
+16 0 obj
 <<
 /ProcSet [/PDF /Text ]
 /Font <<
@@ -1074,7 +2005,7 @@ endobj
 /TR2 /Default
 >>
 endobj
-14 0 obj
+17 0 obj
 <<
 /Type /FontDescriptor
 /Ascent 750
@@ -1089,7 +2020,7 @@ endobj
 /StemH 139
 >>
 endobj
-15 0 obj
+18 0 obj
 <<
 /Type /FontDescriptor
 /Ascent 770
@@ -1104,7 +2035,7 @@ endobj
 /StemH 140
 >>
 endobj
-16 0 obj
+19 0 obj
 <<
 /Type /FontDescriptor
 /Ascent 750
@@ -1119,7 +2050,7 @@ endobj
 /StemH 84
 >>
 endobj
-17 0 obj
+20 0 obj
 <<
 /Type /FontDescriptor
 /Ascent 753
@@ -1134,7 +2065,7 @@ endobj
 /StemH 51
 >>
 endobj
-18 0 obj
+21 0 obj
 <<
 /Type /FontDescriptor
 /Ascent 753
@@ -1155,10 +2086,10 @@ endobj
 /Subtype /TrueType
 /FirstChar 47
 /LastChar 58
-/Widths [278 500 500 500 500 0 500 0 500 0 0 333 ]
+/Widths [278 500 500 500 0 500 500 0 0 500 500 333 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Times-Bold
-/FontDescriptor 14 0 R
+/FontDescriptor 17 0 R
 >>
 endobj
 5 0 obj
@@ -1166,11 +2097,11 @@ endobj
 /Type /Font
 /Subtype /TrueType
 /FirstChar 49
-/LastChar 50
-/Widths [556 556 ]
+/LastChar 51
+/Widths [556 556 556 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Helvetica-Bold
-/FontDescriptor 15 0 R
+/FontDescriptor 18 0 R
 >>
 endobj
 6 0 obj
@@ -1187,7 +2118,7 @@ endobj
 500 0 333 389 278 500 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Times-Roman
-/FontDescriptor 16 0 R
+/FontDescriptor 19 0 R
 >>
 endobj
 7 0 obj
@@ -1196,15 +2127,15 @@ endobj
 /Subtype /TrueType
 /FirstChar 32
 /LastChar 121
-/Widths [600 0 0 0 0 0 0 0 600 600 0 600 600 0 600 600 
+/Widths [600 0 0 0 0 0 0 0 600 600 0 600 600 600 600 600 
 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 0 
 0 600 600 600 600 0 600 0 0 600 0 0 600 600 600 0 
-600 0 0 600 600 600 0 600 0 0 0 0 0 0 600 0 
+600 0 0 600 600 600 600 600 0 0 0 0 0 0 600 0 
 0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
 600 0 600 600 600 600 600 600 600 600 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Courier
-/FontDescriptor 17 0 R
+/FontDescriptor 20 0 R
 >>
 endobj
 8 0 obj
@@ -1214,16 +2145,16 @@ endobj
 /FirstChar 32
 /LastChar 146
 /Widths [600 0 0 0 0 0 0 0 0 0 0 0 0 600 0 0 
-0 0 0 0 0 0 0 0 0 0 0 0 600 0 600 0 
-0 0 0 600 0 0 600 0 0 0 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 600 0 600 600 600 0 
+0 600 0 600 600 0 600 0 0 600 0 0 0 0 600 0 
+600 0 0 600 0 0 0 0 0 0 0 0 0 0 0 0 
 0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
 600 0 600 600 600 600 600 600 0 600 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 600 ]
 /Encoding /WinAnsiEncoding
 /BaseFont /Courier-Bold
-/FontDescriptor 18 0 R
+/FontDescriptor 21 0 R
 >>
 endobj
 1 0 obj
@@ -1242,71 +2173,82 @@ endobj
 /Contents 12 0 R
 >>
 endobj
-19 0 obj
+14 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 16 0 R
+/Contents 15 0 R
+>>
+endobj
+22 0 obj
 <<
 /S /D
 >>
 endobj
-20 0 obj
+23 0 obj
 <<
-/Nums [0 19 0 R ]
+/Nums [0 22 0 R ]
 >>
 endobj
 10 0 obj
 <<
 /Type /Pages
-/Kids [1 0 R 11 0 R]
-/Count 2
+/Kids [1 0 R 11 0 R 14 0 R]
+/Count 3
 /Rotate 90
 /MediaBox [0 0 595 842]
 >>
 endobj
-21 0 obj
+24 0 obj
 <<
-/CreationDate (D:20110513092649+10'00')
-/ModDate (D:20110513092649+10'00')
+/CreationDate (D:20110518224721+10'00')
+/ModDate (D:20110518224721+10'00')
 /Producer (Apple pstopdf)
 >>
 endobj
-22 0 obj
+25 0 obj
 <<
 /Type /Catalog
 /Pages 10 0 R
-/PageLabels 20 0 R
+/PageLabels 23 0 R
 >>
 endobj
 xref
-0 23
+0 26
 0000000000 65535 f 
-0000016174 00000 n 
+0000028602 00000 n 
 0000000016 00000 n 
-0000011405 00000 n 
-0000014486 00000 n 
-0000014688 00000 n 
-0000014862 00000 n 
-0000015251 00000 n 
-0000015716 00000 n 
-0000013348 00000 n 
-0000016407 00000 n 
-0000016255 00000 n 
-0000011545 00000 n 
-0000013207 00000 n 
-0000013488 00000 n 
-0000013690 00000 n 
-0000013896 00000 n 
-0000014093 00000 n 
-0000014284 00000 n 
-0000016339 00000 n 
-0000016367 00000 n 
-0000016507 00000 n 
-0000016630 00000 n 
+0000012290 00000 n 
+0000026888 00000 n 
+0000027092 00000 n 
+0000027270 00000 n 
+0000027659 00000 n 
+0000028128 00000 n 
+0000025750 00000 n 
+0000028919 00000 n 
+0000028683 00000 n 
+0000012430 00000 n 
+0000024099 00000 n 
+0000028767 00000 n 
+0000024240 00000 n 
+0000025609 00000 n 
+0000025890 00000 n 
+0000026092 00000 n 
+0000026298 00000 n 
+0000026495 00000 n 
+0000026686 00000 n 
+0000028851 00000 n 
+0000028879 00000 n 
+0000029026 00000 n 
+0000029149 00000 n 
 trailer
 <<
-/Size 23
-/Root 22 0 R
-/Info 21 0 R
-/ID [<34e97a8811691d825704bf946af2b5ce><34e97a8811691d825704bf946af2b5ce>]
+/Size 26
+/Root 25 0 R
+/Info 24 0 R
+/ID [<f3a5ced70113c075dc2ebb51ce434c5c><f3a5ced70113c075dc2ebb51ce434c5c>]
 >>
 startxref
-16700
+29219
 %%EOF

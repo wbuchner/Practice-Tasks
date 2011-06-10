@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>newList.pas</string>
+	<string>TowersHanoi.pas</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -40,11 +40,13 @@
 			<key>filename</key>
 			<string>CtoF.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-01T06:58:42Z</date>
+			<date>2011-06-09T00:09:05Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>CtoF.o</string>
+			<key>lastUsed</key>
+			<date>2011-05-28T03:19:50Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -60,9 +62,15 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>CircleStats1.pas</string>
+			<key>lastUsed</key>
+			<date>2011-06-09T00:09:00Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>FtoC.pas</string>
 			<key>lastUsed</key>
-			<date>2011-04-07T09:23:09Z</date>
+			<date>2011-06-09T00:09:01Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -138,7 +146,7 @@
 			<key>filename</key>
 			<string>Median.pas</string>
 			<key>lastUsed</key>
-			<date>2011-04-06T08:52:44Z</date>
+			<date>2011-06-09T00:09:06Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -192,7 +200,7 @@
 			<key>filename</key>
 			<string>SwallowAirSpeedVelocity.pas</string>
 			<key>lastUsed</key>
-			<date>2011-03-23T09:49:26Z</date>
+			<date>2011-06-09T01:39:49Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -216,7 +224,7 @@
 			<key>filename</key>
 			<string>GuessNumber.pas</string>
 			<key>lastUsed</key>
-			<date>2011-04-27T02:45:30Z</date>
+			<date>2011-06-09T00:09:03Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -306,7 +314,7 @@
 			<key>filename</key>
 			<string>StackTest.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-12T11:48:33Z</date>
+			<date>2011-05-27T04:30:19Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -324,7 +332,9 @@
 			<key>filename</key>
 			<string>TowersHanoi.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-12T10:44:06Z</date>
+			<date>2011-06-09T02:12:05Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -336,19 +346,23 @@
 			<key>filename</key>
 			<string>newList.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-12T12:53:38Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-05-27T04:30:16Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Mode.pas</string>
+			<key>lastUsed</key>
+			<date>2011-06-09T00:09:09Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>LinkedList.pas</string>
 			<key>lastUsed</key>
-			<date>2011-05-12T12:53:38Z</date>
+			<date>2011-06-09T00:09:12Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>198</integer>
 	<key>metaData</key>
 	<dict>
 		<key>Game Concept.tex</key>
@@ -364,34 +378,6 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>GuessNumber.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>13</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>8</integer>
-		</dict>
-		<key>LinkedList.pas</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>32</integer>
-				<key>line</key>
-				<integer>85</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>44</integer>
 		</dict>
 		<key>MyFriendsExt.pas</key>
 		<dict>
@@ -465,6 +451,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>TowersHanoi.pas</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>39</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>Variables.pas</key>
 		<dict>
 			<key>caret</key>
@@ -484,25 +484,40 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>51</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>87</integer>
+				<integer>0</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>52</integer>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>8</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>LinkedList.pas</string>
-		<string>newList.pas</string>
-		<string>StackTest.pas</string>
+		<string>TowersHanoi.pas</string>
+		<string>SwallowAirSpeedVelocity.pas</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1008, 32}, {1469, 1386}}</string>
+	<string>{{973, 19}, {915, 1399}}</string>
 </dict>
 </plist>

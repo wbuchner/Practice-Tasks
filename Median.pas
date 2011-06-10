@@ -1,9 +1,10 @@
-// Author: Wayne Buchner
-// Student ID: 6643140
-// Date: 03/04/2011
-// Program: Median.pas
-// Description: Calculate the Median value from an array
-
+{
+Author: Wayne Buchner
+Student ID: 6643140
+Date: 03/04/2011
+Program: Median.pas
+Description: Calculate the Median value from an array
+}
 program Median;
 
 function Median (const  data: array of Integer):Double;
@@ -35,7 +36,7 @@ end;
 
 procedure Main();
 var
-	data: array [0..7] of Integer;
+	data : array [0..7] of Integer;
 begin
 	data[0] := 1;
 	data[1] := 2;

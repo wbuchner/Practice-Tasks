@@ -14,7 +14,9 @@ type
     start   : NodePtr;
     finish  : NodePtr;
   end;
-
+  
+  // Add enumerated type to change the operator in the find Node function
+  
 procedure CreateList(var list: LinkedLst);
 begin
   list.start := nil;
@@ -30,6 +32,80 @@ begin
   result^.next := next;
 end;
 
+function NodeCount(list: NodePtr; value: Integer): Integer;
+begin
+  result := 0;
+  while (Assigned(list)) AND (list^.data <> value) do
+  begin
+    list := list^.next;
+    result := result + 1;
+   end;
+end;
+
+
+function FindNode(list: NodePtr; value: Integer): NodePtr;
+var
+  current : NodePtr;
+begin
+  result := nil;
+  current := list;
+
+  while (Assigned(current)) AND (current^.data <> value) do
+  begin
+    current := current^.next;
+    result := current;
+  end;
+ 
+end;
+
+// new find previous
+// function FindPreviousNode(list, ofNode: NodePtr; val: Integer) : NodePtr;
+// var
+// current, previous : NodePtr;
+// 
+// begin
+//   current := list;
+//   previous := nil;
+//   WriteLn('val in FindPrevNode', val);
+//   while (current <> ofNode) and (current <> nil) do
+//   begin
+//   // pass in the value and it will return the previous node
+//    previous := current;
+//    current := current^.next;
+//   end;
+//   result := previous;
+// end;
+
+
+
+function FindPreviousNode(list: NodePtr; val: Integer) : NodePtr;
+var
+  i : Integer;
+begin
+  WriteLn('val in FindPrevNode', val);
+  i := 0;
+  for i:= 0 to val-2 do
+  begin
+  // pass in the value and it will return the previous node
+    list := list^.next;
+    result := list;
+  end;
+end;
+
+function FindNextNode(list: NodePtr; val: Integer) : NodePtr;
+var
+  i : Integer;
+begin
+  WriteLn('val in FindPrevNode', val);
+  i := 0;
+ for i:= 0 to val-1 do
+  begin
+  // pass in the value and it will return the previous node
+    list := list^.next;
+    result := list;
+  end;
+end;
+
 // Dispose all nodes
 procedure DisposeNodes(var start: NodePtr);
 begin
@@ -41,31 +117,57 @@ begin
   end;
 end;
 
-// Insert After Function
-function InsertBefore(data: Integer; n : NodePtr): NodePtr;
+// Insert before procedure determined by parameters
+procedure InsertBefore(list : NodePtr; beforeVal, val : Integer);
+var
+  nodeBefore, temp: NodePtr;
 begin
-  result := CreateNode(data, n^.next); // follow n 
-  n^.next := result;
+  nodeBefore := FindPreviousNode(list, NodeCount(list, beforeVal));
+  temp := CreateNode(val, nodeBefore^.next);
+  nodeBefore^.next := temp;
 end;
 
-// Insert After Function
-function InsertAfter(data: Integer; n : NodePtr): NodePtr;
+// Insert after procedure determined by parameters
+procedure InsertAfter(list : NodePtr; beforeVal, val : Integer);
+var
+  nodeBefore, temp: NodePtr;
 begin
-  result := CreateNode(data, n^.next); // follow n 
-  n^.next := result;
- end;
+  // find the node before
+  nodeBefore := FindNextNode(list, NodeCount(list, beforeVal));  
+  
+  temp := CreateNode(val, nodeBefore^.next);
+  nodeBefore^.next := temp;
+end;
 
 // Insert At Start of List
-function PrependNode(data: Integer; n : NodePtr): NodePtr;
+procedure PrependNode(var linked: LinkedLst; value: Integer);
+var
+  temp : NodePtr;
 begin
-  result := CreateNode(data, n^.next^.next);
-  n^.next := result;
-  
+  temp := CreateNode(value, linked.start);
+  linked.start := temp;
+  if linked.finish = nil then
+  begin
+    linked.finish := temp;
+  end;
 end;
 
-function FindNode(list, value : nodePtr): NodePtr;
+procedure AppendNode(var linked: LinkedLst; value: Integer);
+var
+  temp : NodePtr;
 begin
-  result := nil;
+  temp := CreateNode(value, nil);
+  if linked.finish <> nil then
+  begin
+    linked.finish^.next := temp;
+  end
+  else
+  begin
+    // list is empty
+    linked.start := temp;
+  end;
+  
+  linked.finish := temp;
 end;
 
 // Print Nodes
@@ -83,21 +185,22 @@ begin
 end;
 
 // Print From Node
+// In: NodePtr = list.start 
 procedure PrintFrom(n: NodePtr);
 begin
   if n <> nil then
-    begin
-      Write(n^.data,' -> ');
-      PrintFrom(n^.next);
-     end
-    else
-    begin
-      WriteLn('nil');
-    end;
-    //WriteLn();
+  begin
+  Write(n^.data,' -> ');
+  PrintFrom(n^.next);
+  end
+  else
+  begin
+  WriteLn('nil');
+  end;
+    {WriteLn();}
 end;
 
-// Count nodes
+{ Count nodes }
 function Count(n: NodePtr):Integer;
 var
   current: NodePtr;
@@ -110,36 +213,51 @@ begin
     current := current^.next;  
   end;
   
-  // if n <> nil then
-  // result := 1+Count(n^.next)
-  // else
-  //   result := 0;
 end;
 
 procedure Main();
 var
-  start: NodePtr;
   list : LinkedLst;
-  
+  find : NodePtr;
 begin
   CreateList(list);
-  start := CreateNode(1, nil);
-  start := CreateNode(2, start);
-  InsertBefore(8, start);
-  start := CreateNode(3, start);
-  InsertBefore(4, start);
-  // AppendNode(start^.next, 4);
-  // AppendNode(start^.next^.next, 5);
-  WriteLn('Count is ', Count(start));
-
-  //PrependNode(start^.data, start^.prev);
-
-  PrintFrom(start);
-  PrintBackTo(start);
-  WriteLn();
-  DisposeNodes(start);
+  PrependNode(list, 1);
+  PrependNode(list, 5);
+  PrependNode(list, 10);
+  PrependNode(list, 15);
+  PrependNode(list, 20);
+  AppendNode(list, 99);
+  WriteLn('======================');
+  PrintFrom(list.start);
+  WriteLn('======================');
+  WriteLn('Start of the list data ',list.start^.data);
+  WriteLn('Finish of the list data ',list.finish^.data);
+  PrependNode(list, 30);
+  WriteLn('Start of the list data ',list.start^.data);
+  PrintFrom(list.start);
+ 
+  find := FindNode(list.start, 10);
   
-  // start is = nill
+  FindPreviousNode(list.start, 2);
+  WriteLn('Node Count :',NodeCount(list.start, 15));
+  
+ 
+  WriteLn('======================');
+  WriteLn('find ', find^.data);
+  
+  PrintFrom(list.start);
+  WriteLn('======================');
+  
+  find :=  FindPreviousNode(list.start, NodeCount(list.start, 10));
+  WriteLn('Find Previous Node Function ', find^.data); 
+  //WriteLn('Find Node ', FindNode(list,20));
+  WriteLn('======================');
+  
+  InsertBefore(list.start, 15, 18);
+  InsertAfter(list.start, 15, 22);
+  PrintFrom(list.start);
+
+
 end;
 
 // Main executable
